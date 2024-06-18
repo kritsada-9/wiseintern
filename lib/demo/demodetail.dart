@@ -5,7 +5,7 @@ import 'package:wiseintern/menu_drawer.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:wiseintern/home/footer.dart';
-import 'package:wiseintern/demo/register.dart';
+import 'package:wiseintern/demo/registerdetail.dart';
 
 class DemoDetailPage extends StatefulWidget {
   @override

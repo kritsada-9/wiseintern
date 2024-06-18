@@ -119,7 +119,7 @@ class _DestinationCarouselState extends State<GAMS> {
                                                         // color: Colors.amber,
                                                         height: 20,
                                                         child: Text(
-                                                          "Governance and Assurance Master Suit",
+                                                          "Governance Assurance Master Suite",
                                                           style: GoogleFonts
                                                               .ibmPlexSansThai(
                                                                   fontWeight:
@@ -151,7 +151,7 @@ class _DestinationCarouselState extends State<GAMS> {
                                               width: 550,
                                               height: 150,
                                               child: Text(
-                                                "Governance And Assurance Master Suit",
+                                                "Governance Assurance Master Suite",
                                                 style:
                                                     GoogleFonts.ibmPlexSansThai(
                                                         fontSize: 48,
@@ -395,7 +395,7 @@ class _DestinationCarouselState extends State<GAMS> {
                                                             // color: Colors.amber,
                                                             height: 20,
                                                             child: Text(
-                                                              "Governance and Assurance Master Suit",
+                                                              "Governance Assurance Master Suite",
                                                               style: GoogleFonts.ibmPlexSansThai(
                                                                   fontWeight:
                                                                       FontWeight
@@ -426,7 +426,7 @@ class _DestinationCarouselState extends State<GAMS> {
                                                   width: 550,
                                                   height: 150,
                                                   child: Text(
-                                                    "Governance And Assurance Master Suit",
+                                                    "Governance Assurance Master Suite",
                                                     style: GoogleFonts
                                                         .ibmPlexSansThai(
                                                             fontSize: 48,

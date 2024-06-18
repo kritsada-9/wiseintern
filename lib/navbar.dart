@@ -208,7 +208,7 @@ class _NavigationBarState extends State<NavBar> {
                       value: 'governance',
                       onTap: () => context.go('/gams'),
                       child: Text(
-                        'Governance Assurance Suit',
+                        'Governance Assurance Master Suit',
                         style: TextStyle(
                           fontSize: 16,
                           color: _selected
@@ -272,16 +272,16 @@ class _NavigationBarState extends State<NavBar> {
                 ),
               ),
             ),
-            TextButton(
-              child: Text(
-                "Blogs",
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                ),
-              ),
-              onPressed: () => context.go('/blogs'),
-            ),
+            // TextButton(
+            //   child: Text(
+            //     "Blogs",
+            //     style: TextStyle(
+            //       fontSize: 16,
+            //       color: Colors.white,
+            //     ),
+            //   ),
+            //   onPressed: () => context.go('/blogs'),
+            // ),
             TextButton(
               child: Text(
                 "Contact Us",
@@ -292,29 +292,29 @@ class _NavigationBarState extends State<NavBar> {
               ),
               onPressed: () => context.go('/contact'),
             ),
-            SizedBox(
-              width: 42,
-            ),
-            SizedBox(
-              width: 195,
-              height: 50,
-              child: ElevatedButton(
-                onPressed: () => context.go('/demo'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 232, 242, 254),
-                  side: BorderSide(width: 3, color: Colors.blue),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0)),
-                ),
-                child: Text(
-                  'ทดลองใช้ฟรี',
-                  style: GoogleFonts.ibmPlexSansThai(
-                      color: Color.fromARGB(255, 57, 128, 237),
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600),
-                ),
-              ),
-            ),
+            // SizedBox(
+            //   width: 42,
+            // ),
+            // SizedBox(
+            //   width: 195,
+            //   height: 50,
+            //   child: ElevatedButton(
+            //     onPressed: () => context.go('/demo'),
+            //     style: ElevatedButton.styleFrom(
+            //       backgroundColor: Color.fromARGB(255, 232, 242, 254),
+            //       side: BorderSide(width: 3, color: Colors.blue),
+            //       shape: RoundedRectangleBorder(
+            //           borderRadius: BorderRadius.circular(30.0)),
+            //     ),
+            //     child: Text(
+            //       'ทดลองใช้ฟรี',
+            //       style: GoogleFonts.ibmPlexSansThai(
+            //           color: Color.fromARGB(255, 57, 128, 237),
+            //           fontSize: 20,
+            //           fontWeight: FontWeight.w600),
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

@@ -101,7 +101,7 @@ class _FooterState extends State<Footer> {
               height: Responsive.isDesktop(context) ? 10 : 5,
             ),
             Text(
-              "02-103-4376",
+              "02-000-0323",
               style: GoogleFonts.ibmPlexSansThai(
                 fontSize: 16,
                 fontWeight: FontWeight.w400,
@@ -203,7 +203,7 @@ class _FooterState extends State<Footer> {
 
     List<Services> serviceButton = [
       Services("PDPA Management Platform", "/services"),
-      Services("Governance Assurance Suite", "/"),
+      Services("Governance Assurance Master Suite", "/gams"),
       Services("Get a Free Demo", "/demo"),
       Services("Key Partners", "/"),
       Services("Join Our Amazing Team", "/")

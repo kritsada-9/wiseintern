@@ -13,9 +13,8 @@ class Address extends StatefulWidget {
 
 class _Address extends State<Address> {
   final List<String> optionsItem = [
-    "option 1",
-    "option 2",
-    "option 3",
+    "PDPA Management Platform",
+    "Governance Assurance Master Suit",
   ];
 
   String? selectedOption;
@@ -663,7 +662,7 @@ class _Address extends State<Address> {
                                                 width: 16,
                                               ),
                                               Text(
-                                                "(02) 103-4379",
+                                                "(02) 000-0323",
                                                 style:
                                                     GoogleFonts.ibmPlexSansThai(
                                                         fontSize: 20,
@@ -729,7 +728,7 @@ class _Address extends State<Address> {
                                                 width: 16,
                                               ),
                                               Text(
-                                                "admin@thewiseworks.com",
+                                                "info@thewiseworks.com",
                                                 style:
                                                     GoogleFonts.ibmPlexSansThai(
                                                         fontSize: 20,
@@ -866,7 +865,7 @@ class _Address extends State<Address> {
                                             textAlign: TextAlign.start,
                                           ),
                                           Text(
-                                            "7 Soi Lat Pla Khao 19, Chorakhe Bua\nSubdistrict, Lat Phrao District, Bangkok ",
+                                            "179/98 Soi Ruammitpattana Junction 8, \nTarang, Bangkhen, Bangkok",
                                             style: GoogleFonts.ibmPlexSansThai(
                                               fontSize: 16,
                                               fontWeight: FontWeight.w400,

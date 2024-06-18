@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wiseintern/responsive.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
@@ -146,8 +147,8 @@ class _Register extends State<Register> {
                                       Padding(
                                           padding:
                                               const EdgeInsets.only(left: 70),
-                                          child: TextButton(
-                                            onPressed: () {},
+                                          child: TextButton(                                           
+                                            onPressed: () => context.go('/registerdetail'),
                                             child: Text(
                                               "ถัดไป",
                                               style:
@@ -3039,7 +3040,7 @@ class _Register extends State<Register> {
                                                         ? 66
                                                         : 46,
                                                     child: ElevatedButton(
-                                                      onPressed: () {},
+                                                      onPressed: () => context.go('/registerdetail'),
                                                       style: ElevatedButton
                                                           .styleFrom(
                                                         backgroundColor:
@@ -3312,7 +3313,7 @@ class _Register extends State<Register> {
                                                     textAlign: TextAlign.start,
                                                   ),
                                                   TextButton(
-                                                    onPressed: () {},
+                                                    onPressed: () => context.go('/registerdetail'),
                                                     child: Text(
                                                       "ถัดไป",
                                                       style: GoogleFonts
@@ -3376,7 +3377,7 @@ class _Register extends State<Register> {
                                                           TextAlign.start,
                                                     ),
                                                     TextButton(
-                                                      onPressed: () {},
+                                                      onPressed: () => context.go('/registerdetail'),
                                                       child: Text(
                                                         "ถัดไป",
                                                         style: GoogleFonts

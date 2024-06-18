@@ -149,7 +149,7 @@ class _Register extends State<Register> {
                                           child: TextButton(
                                             onPressed: () {},
                                             child: Text(
-                                              "ถัดไป",
+                                              "สมัครใช้งาน",
                                               style:
                                                   GoogleFonts.ibmPlexSansThai(
                                                       fontSize: 24,
@@ -354,7 +354,7 @@ class _Register extends State<Register> {
                               children: [
                                 Container(
                                   width: 726,
-                                  height: 1280,
+                                  height: 900,
                                   decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(40)),
@@ -369,7 +369,7 @@ class _Register extends State<Register> {
                                           text: TextSpan(
                                             children: [
                                               TextSpan(
-                                                text: 'สมัครใช้งานฟรี',
+                                                text: 'อยากรู้จักคุณ',
                                                 style:
                                                     GoogleFonts.ibmPlexSansThai(
                                                   fontSize: 48,
@@ -378,7 +378,7 @@ class _Register extends State<Register> {
                                                 ),
                                               ),
                                               TextSpan(
-                                                text: ' ไม่มีค่าใช้จ่าย',
+                                                text: 'ให้มากขึ้น',
                                                 style:
                                                     GoogleFonts.ibmPlexSansThai(
                                                   fontSize: 48,
@@ -395,7 +395,7 @@ class _Register extends State<Register> {
                                         padding: const EdgeInsets.only(
                                             top: 36, left: 25),
                                         child: Text(
-                                          "ทดลองใช้งาน โดยไม่มีข้อมูลผูกมัดใดๆ",
+                                          "ให้ทีมงาน wisework รู้เรื่องของคุณเพิ่มสักนิด \nเพื่อให้เราเข้าใจคุณมากขึ้น",
                                           style: GoogleFonts.ibmPlexSansThai(
                                               fontSize: 24,
                                               fontWeight: FontWeight.w500,
@@ -419,7 +419,7 @@ class _Register extends State<Register> {
                                                       Container(
                                                         // width: 310,
                                                         child: Text(
-                                                          "ชื่อ-นามสกุล",
+                                                          "ชื่อบริษัท",
                                                           style: GoogleFonts
                                                               .ibmPlexSansThai(
                                                                   fontSize: 18,
@@ -456,7 +456,7 @@ class _Register extends State<Register> {
                                                       decoration:
                                                           InputDecoration(
                                                         hintText:
-                                                            'ชื่อ-นามสกุล',
+                                                            'ชื่อบริษัท',
                                                         hintStyle: GoogleFonts
                                                             .ibmPlexSansThai(
                                                                 fontSize: 16,
@@ -572,190 +572,7 @@ class _Register extends State<Register> {
                                             // )
                                           ],
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(top: 64),
-                                        child: Row(
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  left: 25),
-                                              child: Column(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Wrap(
-                                                    children: [
-                                                      Container(
-                                                        // width: 310,
-                                                        child: Text(
-                                                          "อีเมล",
-                                                          style: GoogleFonts
-                                                              .ibmPlexSansThai(
-                                                                  fontSize: 18,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w400,
-                                                                  color: Colors
-                                                                      .black),
-                                                        ),
-                                                      ),
-                                                      Container(
-                                                        // width: 310,
-                                                        child: Text(
-                                                          "*",
-                                                          style: GoogleFonts
-                                                              .ibmPlexSansThai(
-                                                                  fontSize: 18,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w400,
-                                                                  color: Color
-                                                                      .fromARGB(
-                                                                          255,
-                                                                          52,
-                                                                          145,
-                                                                          206)),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  Container(
-                                                    width: 600,
-                                                    child: TextField(
-                                                      decoration:
-                                                          InputDecoration(
-                                                        hintText:
-                                                            'hello@thewiseworks.com',
-                                                        hintStyle: GoogleFonts
-                                                            .ibmPlexSansThai(
-                                                                fontSize: 16,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w500,
-                                                                color: Color
-                                                                    .fromARGB(
-                                                                        255,
-                                                                        232,
-                                                                        242,
-                                                                        254)),
-                                                        contentPadding:
-                                                            EdgeInsets.fromLTRB(
-                                                                0, 20, 0, 0),
-                                                        border:
-                                                            UnderlineInputBorder(
-                                                          borderSide:
-                                                              BorderSide(
-                                                                  color: Color
-                                                                      .fromARGB(
-                                                                          255,
-                                                                          52,
-                                                                          145,
-                                                                          206)),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(top: 64),
-                                        child: Row(
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  left: 32),
-                                              child: Column(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Wrap(
-                                                    children: [
-                                                      Container(
-                                                        child: Text(
-                                                          "เบอร์โทรศัพท์",
-                                                          style: GoogleFonts
-                                                              .ibmPlexSansThai(
-                                                                  fontSize: 18,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w400,
-                                                                  color: Colors
-                                                                      .black),
-                                                        ),
-                                                      ),
-                                                      Container(
-                                                        // width: 310,
-                                                        child: Text(
-                                                          "*",
-                                                          style: GoogleFonts
-                                                              .ibmPlexSansThai(
-                                                                  fontSize: 18,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w400,
-                                                                  color: Color
-                                                                      .fromARGB(
-                                                                          255,
-                                                                          52,
-                                                                          145,
-                                                                          206)),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  Container(
-                                                    width: 600,
-                                                    child: TextField(
-                                                      keyboardType:
-                                                          TextInputType.number,
-                                                      inputFormatters: <TextInputFormatter>[
-                                                        FilteringTextInputFormatter
-                                                            .digitsOnly
-                                                      ],
-                                                      decoration:
-                                                          InputDecoration(
-                                                        hintText:
-                                                            'xxx-xxx-xxxx',
-                                                        hintStyle: GoogleFonts
-                                                            .ibmPlexSansThai(
-                                                                fontSize: 16,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w500,
-                                                                color: Color
-                                                                    .fromARGB(
-                                                                        255,
-                                                                        232,
-                                                                        242,
-                                                                        254)),
-                                                        contentPadding:
-                                                            EdgeInsets.fromLTRB(
-                                                                0, 20, 0, 0),
-                                                        border:
-                                                            UnderlineInputBorder(
-                                                          borderSide:
-                                                              BorderSide(
-                                                                  color: Color
-                                                                      .fromARGB(
-                                                                          255,
-                                                                          52,
-                                                                          145,
-                                                                          206)),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
+                                      ),                              
                                       Padding(
                                         padding: const EdgeInsets.only(top: 64),
                                         child: Row(
@@ -993,6 +810,7 @@ class _Register extends State<Register> {
                                                       ),
                                                     ),
                                                   )
+                                                  
                                                 ],
                                               ),
                                             )
@@ -1109,93 +927,18 @@ class _Register extends State<Register> {
                                             ),
                                             // Padding(
                                             //   padding: const EdgeInsets.only(
-                                            //       top: 36, left: 25),
-                                            //   child: Container(
-                                            //     width: 628,
-                                            //     height: 220,
-                                            //     decoration: BoxDecoration(
-                                            //         color: Colors.white,
-                                            //         borderRadius:
-                                            //             BorderRadius.circular(
-                                            //                 20),
-                                            //         border: Border.all(
-                                            //             color: Color.fromARGB(
-                                            //                 255, 232, 242, 254),
-                                            //             width: 1)),
-                                            //     child: Column(
-                                            //       crossAxisAlignment:
-                                            //           CrossAxisAlignment.start,
-                                            //       children: [
-                                            //         // Padding(
-                                            //         //   padding:
-                                            //         //       const EdgeInsets.only(
-                                            //         //           top: 29,
-                                            //         //           left: 15),
-                                            //         //   child: Text(
-                                            //         //     "โมดูลผลิตภัณฑ์",
-                                            //         //     style: GoogleFonts
-                                            //         //         .ibmPlexSansThai(
-                                            //         //             fontSize: 20,
-                                            //         //             fontWeight:
-                                            //         //                 FontWeight
-                                            //         //                     .w600,
-                                            //         //             color: Colors
-                                            //         //                 .black),
-                                            //         //     textAlign:
-                                            //         //         TextAlign.start,
-                                            //         //   ),
-                                            //         // ),
-                                            //         // Padding(
-                                            //         //   padding:
-                                            //         //       const EdgeInsets.only(
-                                            //         //           top: 18,
-                                            //         //           left: 15),
-                                            //         //   child: Container(
-                                            //         //     width: 310,
-                                            //         //     decoration: BoxDecoration(
-                                            //         //         color:
-                                            //         //             Color.fromARGB(
-                                            //         //                 255,
-                                            //         //                 75,
-                                            //         //                 195,
-                                            //         //                 211),
-                                            //         //         border: Border.all(
-                                            //         //             color: Color
-                                            //         //                 .fromARGB(
-                                            //         //                     255,
-                                            //         //                     52,
-                                            //         //                     145,
-                                            //         //                     206),
-                                            //         //             width: 1)),
-                                            //         //   ),
-                                            //         // ),
-                                            //         // Padding(
-                                            //         //   padding:
-                                            //         //       const EdgeInsets.only(
-                                            //         //           top: 18,
-                                            //         //           left: 15),
-                                            //         //   child: Text(
-                                            //         //     "CMC (Consent Management)\nPDM (Personal Data Management)\nDSR (Data Subject Right Management)",
-                                            //         //     style: GoogleFonts
-                                            //         //         .ibmPlexSansThai(
-                                            //         //             fontSize: 18,
-                                            //         //             fontWeight:
-                                            //         //                 FontWeight
-                                            //         //                     .w400,
-                                            //         //             color: Color
-                                            //         //                 .fromARGB(
-                                            //         //                     255,
-                                            //         //                     130,
-                                            //         //                     130,
-                                            //         //                     130)),
-                                            //         //     textAlign:
-                                            //         //         TextAlign.start,
-                                            //         //   ),
-                                            //         // ),
-                                            //       ],
+                                            //       top: 36),
+                                            //   child: Center(
+                                            //     child: SizedBox(
+                                            //       width: 344,
+                                            //       height: 66,
+                                            //       child: Checkbox(
+                                                    
+                                            //       ),
                                             //     ),
                                             //   ),
-                                            // ),
+                                            // ), 
+                                            
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   top: 36),
@@ -1218,7 +961,7 @@ class _Register extends State<Register> {
                                                                           44.0)),
                                                     ),
                                                     child: Text(
-                                                      'ถัดไป',
+                                                      'สมัครใช้งาน',
                                                       style: GoogleFonts
                                                           .ibmPlexSansThai(
                                                               fontSize: 32,
@@ -1231,71 +974,7 @@ class _Register extends State<Register> {
                                                   ),
                                                 ),
                                               ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  top: 25),
-                                              child: Center(
-                                                child: Text(
-                                                  "หรือ",
-                                                  style: GoogleFonts
-                                                      .ibmPlexSansThai(
-                                                          fontSize: 32,
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          color: Color.fromARGB(
-                                                              255,
-                                                              130,
-                                                              130,
-                                                              130)),
-                                                ),
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  top: 25),
-                                              child: Center(
-                                                child: SizedBox(
-                                                  width: 384,
-                                                  height: 65,
-                                                  child: ElevatedButton(
-                                                    onPressed: () {},
-                                                    style: ElevatedButton
-                                                        .styleFrom(
-                                                      elevation: 4,
-                                                      backgroundColor:
-                                                          Colors.white,
-                                                      shape:
-                                                          RoundedRectangleBorder(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          44.0)),
-                                                    ),
-                                                    child: Wrap(
-                                                      children: [
-                                                        SizedBox(
-                                                            width: 61,
-                                                            height: 50,
-                                                            child: Image.asset(
-                                                                "assets/demo/google.png")),
-                                                        Text(
-                                                          'สมัครใช้งานด้วย Google',
-                                                          style: GoogleFonts
-                                                              .ibmPlexSansThai(
-                                                                  fontSize: 24,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w400,
-                                                                  color: Colors
-                                                                      .black),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
+                                            ),                            
                                           ],
                                         ),
                                       ),
@@ -1624,7 +1303,7 @@ class _Register extends State<Register> {
                                               top: 40, left: 25),
                                           child: Text.rich(TextSpan(children: [
                                             TextSpan(
-                                                text: 'สมัครใช้งานฟรี',
+                                                text: 'อยากรู้จักคุณ',
                                                 style:
                                                     GoogleFonts.ibmPlexSansThai(
                                                         color: Colors.black,
@@ -1636,7 +1315,7 @@ class _Register extends State<Register> {
                                                         fontWeight:
                                                             FontWeight.w500)),
                                             TextSpan(
-                                                text: ' ไม่มีค่าใช้จ่าย',
+                                                text: 'ให้มากขึ้น',
                                                 style:
                                                     GoogleFonts.ibmPlexSansThai(
                                                         color: Color.fromARGB(
@@ -1661,8 +1340,8 @@ class _Register extends State<Register> {
                                           ),
                                           child: Text(
                                             Responsive.isTablet(context)
-                                                ? "ทดลองใช้งาน โดยไม่มีข้อมูลผูกมัดใดๆ"
-                                                : "ทดลองใช้งาน \nโดยไม่มีข้อมูลผูกมัดใดๆ",
+                                                ? "ให้ทีมงาน wisework รู้เรื่องของคุณเพิ่มสักนิด \nเพื่อให้เราเข้าใจคุณมากขึ้น"
+                                                : "ให้ทีมงาน wisework รู้เรื่องของคุณเพิ่มสักนิด \nเพื่อให้เราเข้าใจคุณมากขึ้น",
                                             style: GoogleFonts.ibmPlexSansThai(
                                                 fontSize:
                                                     Responsive.isTablet(context)
@@ -1693,7 +1372,7 @@ class _Register extends State<Register> {
                                                                 Container(
                                                                   // width: 310,
                                                                   child: Text(
-                                                                    "ชื่อ-นามสกุล",
+                                                                    "ชื่อบริษัท",
                                                                     style: GoogleFonts.ibmPlexSansThai(
                                                                         fontSize:
                                                                             18,
@@ -1729,7 +1408,7 @@ class _Register extends State<Register> {
                                                                 decoration:
                                                                     InputDecoration(
                                                                   hintText:
-                                                                      'ชื่อ-นามสกุล',
+                                                                      'ชื่อบริษัท',
                                                                   hintStyle: GoogleFonts.ibmPlexSansThai(
                                                                       fontSize:
                                                                           16,
@@ -1864,7 +1543,7 @@ class _Register extends State<Register> {
                                                                 Container(
                                                                   // width: 310,
                                                                   child: Text(
-                                                                    "ชื่อ-นามสกุล",
+                                                                    "ชื่อบริษัท",
                                                                     style: GoogleFonts.ibmPlexSansThai(
                                                                         fontSize:
                                                                             18,
@@ -1900,7 +1579,7 @@ class _Register extends State<Register> {
                                                                 decoration:
                                                                     InputDecoration(
                                                                   hintText:
-                                                                      'ชื่อ-นามสกุล',
+                                                                      'ชื่อบริษัท',
                                                                   hintStyle: GoogleFonts.ibmPlexSansThai(
                                                                       fontSize:
                                                                           16,
@@ -2021,367 +1700,7 @@ class _Register extends State<Register> {
                                                       //   ),
                                                       // ),
                                                     ],
-                                                  )),
-                                        Padding(
-                                            padding:
-                                                const EdgeInsets.only(top: 64),
-                                            child: Responsive.isTablet(context)
-                                                ? Row(
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                .only(left: 25),
-                                                        child: Column(
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
-                                                          children: [
-                                                            Wrap(
-                                                              children: [
-                                                                Container(
-                                                                  // width: 310,
-                                                                  child: Text(
-                                                                    "อีเมล",
-                                                                    style: GoogleFonts.ibmPlexSansThai(
-                                                                        fontSize:
-                                                                            18,
-                                                                        fontWeight:
-                                                                            FontWeight
-                                                                                .w400,
-                                                                        color: Colors
-                                                                            .black),
-                                                                  ),
-                                                                ),
-                                                                Container(
-                                                                  // width: 310,
-                                                                  child: Text(
-                                                                    "*",
-                                                                    style: GoogleFonts.ibmPlexSansThai(
-                                                                        fontSize:
-                                                                            18,
-                                                                        fontWeight:
-                                                                            FontWeight
-                                                                                .w400,
-                                                                        color: Color.fromARGB(
-                                                                            255,
-                                                                            52,
-                                                                            145,
-                                                                            206)),
-                                                                  ),
-                                                                ),
-                                                              ],
-                                                            ),
-                                                            Container(
-                                                              width: 600,
-                                                              child: TextField(
-                                                                decoration:
-                                                                    InputDecoration(
-                                                                  hintText:
-                                                                      'hello@thewiseworks.com',
-                                                                  hintStyle: GoogleFonts.ibmPlexSansThai(
-                                                                      fontSize:
-                                                                          16,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w500,
-                                                                      color: Color.fromARGB(
-                                                                          255,
-                                                                          232,
-                                                                          242,
-                                                                          254)),
-                                                                  contentPadding:
-                                                                      EdgeInsets
-                                                                          .fromLTRB(
-                                                                              0,
-                                                                              20,
-                                                                              0,
-                                                                              0),
-                                                                  border:
-                                                                      UnderlineInputBorder(
-                                                                    borderSide: BorderSide(
-                                                                        color: Color.fromARGB(
-                                                                            255,
-                                                                            52,
-                                                                            145,
-                                                                            206)),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  )
-                                                : Column(
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                .only(left: 25),
-                                                        child: Column(
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
-                                                          children: [
-                                                            Wrap(
-                                                              children: [
-                                                                Container(
-                                                                  // width: 310,
-                                                                  child: Text(
-                                                                    "อีเมล",
-                                                                    style: GoogleFonts.ibmPlexSansThai(
-                                                                        fontSize:
-                                                                            18,
-                                                                        fontWeight:
-                                                                            FontWeight
-                                                                                .w400,
-                                                                        color: Colors
-                                                                            .black),
-                                                                  ),
-                                                                ),
-                                                                Container(
-                                                                  // width: 310,
-                                                                  child: Text(
-                                                                    "*",
-                                                                    style: GoogleFonts.ibmPlexSansThai(
-                                                                        fontSize:
-                                                                            18,
-                                                                        fontWeight:
-                                                                            FontWeight
-                                                                                .w400,
-                                                                        color: Color.fromARGB(
-                                                                            255,
-                                                                            52,
-                                                                            145,
-                                                                            206)),
-                                                                  ),
-                                                                ),
-                                                              ],
-                                                            ),
-                                                            Container(
-                                                              width: 310,
-                                                              child: TextField(
-                                                                decoration:
-                                                                    InputDecoration(
-                                                                  hintText:
-                                                                      'hello@thewiseworks.com',
-                                                                  hintStyle: GoogleFonts.ibmPlexSansThai(
-                                                                      fontSize:
-                                                                          16,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w500,
-                                                                      color: Color.fromARGB(
-                                                                          255,
-                                                                          232,
-                                                                          242,
-                                                                          254)),
-                                                                  contentPadding:
-                                                                      EdgeInsets
-                                                                          .fromLTRB(
-                                                                              0,
-                                                                              20,
-                                                                              0,
-                                                                              0),
-                                                                  border:
-                                                                      UnderlineInputBorder(
-                                                                    borderSide: BorderSide(
-                                                                        color: Color.fromARGB(
-                                                                            255,
-                                                                            52,
-                                                                            145,
-                                                                            206)),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  )),
-                                        Padding(
-                                            padding:
-                                                const EdgeInsets.only(top: 64),
-                                            child: Responsive.isTablet(context)
-                                                ? Row(
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                .only(left: 25),
-                                                        child: Column(
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
-                                                          children: [
-                                                            Wrap(
-                                                              children: [
-                                                                Container(
-                                                                  // width: 310,
-                                                                  child: Text(
-                                                                    "เบอร์โทรศัพท์",
-                                                                    style: GoogleFonts.ibmPlexSansThai(
-                                                                        fontSize:
-                                                                            18,
-                                                                        fontWeight:
-                                                                            FontWeight
-                                                                                .w400,
-                                                                        color: Colors
-                                                                            .black),
-                                                                  ),
-                                                                ),
-                                                                Container(
-                                                                  // width: 310,
-                                                                  child: Text(
-                                                                    "*",
-                                                                    style: GoogleFonts.ibmPlexSansThai(
-                                                                        fontSize:
-                                                                            18,
-                                                                        fontWeight:
-                                                                            FontWeight
-                                                                                .w400,
-                                                                        color: Color.fromARGB(
-                                                                            255,
-                                                                            52,
-                                                                            145,
-                                                                            206)),
-                                                                  ),
-                                                                ),
-                                                              ],
-                                                            ),
-                                                            Container(
-                                                              width: 600,
-                                                              child: TextField(
-                                                                decoration:
-                                                                    InputDecoration(
-                                                                  hintText:
-                                                                      'xxx-xxx-xxxx',
-                                                                  hintStyle: GoogleFonts.ibmPlexSansThai(
-                                                                      fontSize:
-                                                                          16,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w500,
-                                                                      color: Color.fromARGB(
-                                                                          255,
-                                                                          232,
-                                                                          242,
-                                                                          254)),
-                                                                  contentPadding:
-                                                                      EdgeInsets
-                                                                          .fromLTRB(
-                                                                              0,
-                                                                              20,
-                                                                              0,
-                                                                              0),
-                                                                  border:
-                                                                      UnderlineInputBorder(
-                                                                    borderSide: BorderSide(
-                                                                        color: Color.fromARGB(
-                                                                            255,
-                                                                            52,
-                                                                            145,
-                                                                            206)),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  )
-                                                : Column(
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                .only(left: 25),
-                                                        child: Column(
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
-                                                          children: [
-                                                            Wrap(
-                                                              children: [
-                                                                Container(
-                                                                  // width: 310,
-                                                                  child: Text(
-                                                                    "เบอร์โทรศัพท์",
-                                                                    style: GoogleFonts.ibmPlexSansThai(
-                                                                        fontSize:
-                                                                            18,
-                                                                        fontWeight:
-                                                                            FontWeight
-                                                                                .w400,
-                                                                        color: Colors
-                                                                            .black),
-                                                                  ),
-                                                                ),
-                                                                Container(
-                                                                  // width: 310,
-                                                                  child: Text(
-                                                                    "*",
-                                                                    style: GoogleFonts.ibmPlexSansThai(
-                                                                        fontSize:
-                                                                            18,
-                                                                        fontWeight:
-                                                                            FontWeight
-                                                                                .w400,
-                                                                        color: Color.fromARGB(
-                                                                            255,
-                                                                            52,
-                                                                            145,
-                                                                            206)),
-                                                                  ),
-                                                                ),
-                                                              ],
-                                                            ),
-                                                            Container(
-                                                              width: 310,
-                                                              child: TextField(
-                                                                decoration:
-                                                                    InputDecoration(
-                                                                  hintText:
-                                                                      'xxx-xxx-xxxx',
-                                                                  hintStyle: GoogleFonts.ibmPlexSansThai(
-                                                                      fontSize:
-                                                                          16,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w500,
-                                                                      color: Color.fromARGB(
-                                                                          255,
-                                                                          232,
-                                                                          242,
-                                                                          254)),
-                                                                  contentPadding:
-                                                                      EdgeInsets
-                                                                          .fromLTRB(
-                                                                              0,
-                                                                              20,
-                                                                              0,
-                                                                              0),
-                                                                  border:
-                                                                      UnderlineInputBorder(
-                                                                    borderSide: BorderSide(
-                                                                        color: Color.fromARGB(
-                                                                            255,
-                                                                            52,
-                                                                            145,
-                                                                            206)),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  )),
+                                                  )),             
                                         Padding(
                                             padding:
                                                 const EdgeInsets.only(top: 36),
@@ -3052,7 +2371,7 @@ class _Register extends State<Register> {
                                                                         44.0)),
                                                       ),
                                                       child: Text(
-                                                        'ถัดไป',
+                                                        'สมัครใช้งาน',
                                                         style: GoogleFonts
                                                             .ibmPlexSansThai(
                                                                 fontSize: Responsive
@@ -3069,108 +2388,7 @@ class _Register extends State<Register> {
                                                     ),
                                                   ),
                                                 ),
-                                              ),
-                                              Padding(
-                                                padding: const EdgeInsets.only(
-                                                  top: 25,
-                                                ),
-                                                child: Center(
-                                                  child: Text(
-                                                    "หรือ",
-                                                    style: GoogleFonts
-                                                        .ibmPlexSansThai(
-                                                            fontSize: Responsive
-                                                                    .isTablet(
-                                                                        context)
-                                                                ? 32
-                                                                : 20,
-                                                            fontWeight:
-                                                                FontWeight.w400,
-                                                            color:
-                                                                Color.fromARGB(
-                                                                    255,
-                                                                    130,
-                                                                    130,
-                                                                    130)),
-                                                  ),
-                                                ),
-                                              ),
-                                              SizedBox(
-                                                  height: Responsive.isTablet(
-                                                          context)
-                                                      ? 25
-                                                      : 15),
-                                              Center(
-                                                child: SizedBox(
-                                                  width: Responsive.isTablet(
-                                                          context)
-                                                      ? 460
-                                                      : 300,
-                                                  height: Responsive.isTablet(
-                                                          context)
-                                                      ? 65
-                                                      : 46,
-                                                  child: ElevatedButton(
-                                                    onPressed: () {},
-                                                    style: ElevatedButton
-                                                        .styleFrom(
-                                                      elevation: 4,
-                                                      backgroundColor:
-                                                          Colors.white,
-                                                      shape:
-                                                          RoundedRectangleBorder(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          44.0)),
-                                                    ),
-                                                    child: Row(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .center,
-                                                      children: [
-                                                        SizedBox(
-                                                            width: Responsive
-                                                                    .isTablet(
-                                                                        context)
-                                                                ? 61
-                                                                : 45,
-                                                            // height: Responsive
-                                                            //         .isTablet(
-                                                            //             context)
-                                                            //     ? 50
-                                                            //     : 37,
-                                                            child: Image.asset(
-                                                              "assets/demo/google.png",
-                                                              fit: BoxFit
-                                                                  .fitWidth,
-                                                            )),
-                                                        SizedBox(
-                                                          width: Responsive
-                                                                  .isTablet(
-                                                                      context)
-                                                              ? 366
-                                                              : 205,
-                                                          child: Text(
-                                                            'สมัครใช้งานด้วย Google',
-                                                            style: GoogleFonts.ibmPlexSansThai(
-                                                                fontSize: Responsive
-                                                                        .isTablet(
-                                                                            context)
-                                                                    ? 32
-                                                                    : 20,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w400,
-                                                                color: Colors
-                                                                    .black),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
+                                              ),                                                                                       
                                             ],
                                           ),
                                         ),
@@ -3314,7 +2532,7 @@ class _Register extends State<Register> {
                                                   TextButton(
                                                     onPressed: () {},
                                                     child: Text(
-                                                      "ถัดไป",
+                                                      "สมัครใช้งาน",
                                                       style: GoogleFonts
                                                           .ibmPlexSansThai(
                                                               fontSize: 24,
@@ -3378,7 +2596,7 @@ class _Register extends State<Register> {
                                                     TextButton(
                                                       onPressed: () {},
                                                       child: Text(
-                                                        "ถัดไป",
+                                                        "สมัครใช้งาน",
                                                         style: GoogleFonts
                                                             .ibmPlexSansThai(
                                                                 fontSize: 18,

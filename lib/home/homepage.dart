@@ -39,8 +39,8 @@ class _HomePageState extends State<HomePage> {
 
   final List<String> listServices = <String>[
     'Our Services',
-    'PDPA ',
-    'Governance ',
+    'PDPA Management Platform ',
+    'Governance Assurance Master Suite',
     'Request Demo',
   ];
   String? AboutValue;
@@ -77,8 +77,8 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(
-                        height: 60,
-                        width: 100,
+                        height: 157,
+                        width: 157,
                         child: InkWell(
                           hoverColor: Color.fromARGB(255, 52, 144, 206),
                           onTap: () => context.go('/'),
