@@ -421,7 +421,7 @@ class _QuestionsState extends State<Questions> {
         elevation: 0,
         expansionCallback: (int index, bool isExpanded) {
           setState(() {
-            items[index].isExpanded = !isExpanded;
+            items[index].isExpanded = isExpanded;
             // _titleColor = _isexpanded ? Colors.black : Color.fromARGB(255, 75, 195, 211);
           });
         },

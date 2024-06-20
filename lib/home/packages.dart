@@ -201,7 +201,7 @@ class _DestinationCarouselState extends State<PackagesPage> {
       PackageCard(
         packageicon: 'packages/rainbow_cloud.png',
         title: 'Enterprise',
-        lisence: 'Perpreptual License',
+        lisence: 'Perpeptual License',
         packages: enterprise,
         buttoncolor: true,
         firstbox: false,
@@ -338,7 +338,7 @@ class _DestinationCarouselState extends State<PackagesPage> {
                         child: PackageCard(
                           packageicon: 'packages/rainbow_cloud.png',
                           title: 'Enterprise',
-                          lisence: 'Perpreptual License',
+                          lisence: 'Perpeptual License',
                           packages: enterprise,
                           buttoncolor: true,
                           firstbox: false,

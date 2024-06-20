@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wiseintern/responsive.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
@@ -13,8 +14,9 @@ class Address extends StatefulWidget {
 
 class _Address extends State<Address> {
   final List<String> optionsItem = [
-    "PDPA Management Platform",
-    "Governance Assurance Master Suit",
+    "ขอรายละเอียดเพิ่มเติม",
+    "รับใบเสนอราคา",
+    "อื่นๆ (โปรดระบุ)",
   ];
 
   String? selectedOption;
@@ -539,7 +541,7 @@ class _Address extends State<Address> {
                                             child: TextFormField(
                                               decoration: InputDecoration(
                                                   hintText:
-                                                      "Enter your message here...",
+                                                      "กรุณาระบุรายละเอียดเพื่อติดต่อกลับ...",
                                                   contentPadding:
                                                       EdgeInsets.symmetric(
                                                           vertical: 20,
@@ -767,7 +769,10 @@ class _Address extends State<Address> {
                                           child: Wrap(
                                             children: [
                                               InkWell(
-                                                onTap: () {},
+                                                // onTap: () => context.go{("https://www.facebook.com/thewiseworks");},
+                                                onTap: ()  {
+                                                  ('https://www.facebook.com/thewiseworks');
+                                                },
                                                 child: SizedBox(
                                                   width: 45,
                                                   height: 45,
@@ -779,7 +784,7 @@ class _Address extends State<Address> {
                                                 padding: const EdgeInsets.only(
                                                     left: 9),
                                                 child: InkWell(
-                                                  onTap: () {},
+                                                  onTap: () {("https://www.instagram.com/thewiseworks");},
                                                   child: SizedBox(
                                                     width: 45,
                                                     height: 45,
@@ -792,7 +797,7 @@ class _Address extends State<Address> {
                                                 padding: const EdgeInsets.only(
                                                     left: 13),
                                                 child: InkWell(
-                                                  onTap: () {},
+                                                  onTap: () {("https://www.youtube.com/@thewiseworks8166");},
                                                   child: SizedBox(
                                                     width: 45,
                                                     height: 45,
@@ -805,7 +810,7 @@ class _Address extends State<Address> {
                                                 padding: const EdgeInsets.only(
                                                     left: 13),
                                                 child: InkWell(
-                                                  onTap: () {},
+                                                  onTap: () {("https://www.tiktok.com/@thewiseworks");},
                                                   child: SizedBox(
                                                     width: 45,
                                                     height: 45,

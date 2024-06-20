@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 // import 'package:wiseintern/home/carousel.dart';
@@ -6,7 +7,7 @@ import 'package:wiseintern/responsive.dart';
 // import 'package:flutter_swiper/flutter_swiper.dart';
 // import 'package:carousel_indicator/carousel_indicator.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:wiseintern/model/customer_carousel.dart';
+// import 'package:wiseintern/model/customer_carousel.dart';
 
 class CustomerModel {
   final String imageUrl;
@@ -438,40 +439,7 @@ class _CustomerState extends State<Customer> {
                                                               '${stories[index].img}',
                                                               // fit: BoxFit.fill,
                                                             )),
-                                                        // Text(
-                                                        //   '${stories[index].brand}',
-                                                        //   style: GoogleFonts
-                                                        //       .ibmPlexSansThai(
-                                                        //           fontWeight:
-                                                        //               FontWeight
-                                                        //                   .w700,
-                                                        //           fontSize: 30,
-                                                        //           color: Color
-                                                        //               .fromARGB(
-                                                        //                   255,
-                                                        //                   33,
-                                                        //                   31,
-                                                        //                   37)),
-                                                        //   textAlign:
-                                                        //       TextAlign.center,
-                                                        // ),
-                                                        // Text(
-                                                        //   '${stories[index].story}',
-                                                        //   style: GoogleFonts
-                                                        //       .ibmPlexSansThai(
-                                                        //     fontWeight:
-                                                        //         FontWeight.w400,
-                                                        //     color:
-                                                        //         Color.fromARGB(
-                                                        //             255,
-                                                        //             61,
-                                                        //             58,
-                                                        //             65),
-                                                        //     fontSize: 16,
-                                                        //   ),
-                                                        //   textAlign:
-                                                        //       TextAlign.center,
-                                                        // ),
+                                                       
                                                       ],
                                                     ),
                                                   ),
@@ -747,7 +715,7 @@ class _CustomerState extends State<Customer> {
                                                             height: 56.7,
                                                             child:
                                                                 ElevatedButton(
-                                                              onPressed: () {},
+                                                              onPressed: () => context.go('/contact'),
                                                               style:
                                                                   ElevatedButton
                                                                       .styleFrom(
@@ -783,7 +751,7 @@ class _CustomerState extends State<Customer> {
                                                             height: 56.7,
                                                             child:
                                                                 ElevatedButton(
-                                                              onPressed: () {},
+                                                              onPressed: () => context.go('/customers'),
                                                               style:
                                                                   ElevatedButton
                                                                       .styleFrom(
@@ -920,7 +888,7 @@ class _CustomerState extends State<Customer> {
                                             width: 191.67,
                                             height: 56.7,
                                             child: ElevatedButton(
-                                              onPressed: () {},
+                                              onPressed: () => context.go('/contact'),
                                               style: ElevatedButton.styleFrom(
                                                 backgroundColor: Color.fromARGB(
                                                     255, 75, 195, 211),
@@ -947,7 +915,7 @@ class _CustomerState extends State<Customer> {
                                             width: 191.67,
                                             height: 56.7,
                                             child: ElevatedButton(
-                                              onPressed: () {},
+                                              onPressed: () => context.go('/customers'),
                                               style: ElevatedButton.styleFrom(
                                                 backgroundColor: Color.fromARGB(
                                                     255, 231, 251, 253),
@@ -1046,7 +1014,7 @@ class _CustomerState extends State<Customer> {
                                       width: 191.67,
                                       height: 48,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () => context.go('/contact'),
                                         style: ElevatedButton.styleFrom(
                                           backgroundColor:
                                               Color.fromARGB(255, 75, 195, 211),
@@ -1070,7 +1038,7 @@ class _CustomerState extends State<Customer> {
                                       width: 191.67,
                                       height: 48,
                                       child: ElevatedButton(
-                                        onPressed: () {},
+                                        onPressed: () => context.go('/customers'),
                                         style: ElevatedButton.styleFrom(
                                           backgroundColor: Color.fromARGB(
                                               255, 231, 251, 253),
@@ -1099,75 +1067,9 @@ class _CustomerState extends State<Customer> {
                       Responsive.isDesktop(context)
                           ? Stack(
                               children: [
-                                Row(
-                                  children: [CustomerCarousel()],
-                                ),
-                                // new Positioned(
-                                //   top: 500,
-                                //   child: Row(
-                                //     mainAxisAlignment:
-                                //         MainAxisAlignment.spaceBetween,
-                                //     children: [
-                                //       Padding(
-                                //         padding: const EdgeInsets.all(50.0),
-                                //         child: Container(
-                                //           width: 59,
-                                //           height: 61,
-                                //           decoration: BoxDecoration(
-                                //               shape: BoxShape.circle,
-                                //               color: Colors.transparent,
-                                //               border: Border.all(
-                                //                   color: Color.fromARGB(
-                                //                       255, 74, 195, 212))),
-                                //           child: IconButton(
-                                //             icon: Icon(
-                                //                 Icons.keyboard_arrow_left,
-                                //                 size: 32,
-                                //                 color: Color.fromARGB(
-                                //                     255, 77, 193, 216)),
-                                //             onPressed: () {
-                                //               _controller.previousPage(
-                                //                 duration:
-                                //                     Duration(milliseconds: 300),
-                                //                 curve: Curves.ease,
-                                //               );
-                                //             },
-                                //           ),
-                                //         ),
-                                //       ),
-                                //       SizedBox(
-                                //         width: 1115,
-                                //       ),
-                                //       Padding(
-                                //         padding: const EdgeInsets.all(50.0),
-                                //         child: Container(
-                                //           width: 59,
-                                //           height: 61,
-                                //           decoration: BoxDecoration(
-                                //               shape: BoxShape.circle,
-                                //               color: Colors.transparent,
-                                //               border: Border.all(
-                                //                   color: Color.fromARGB(
-                                //                       255, 74, 195, 212))),
-                                //           child: IconButton(
-                                //             icon: Icon(
-                                //                 Icons.keyboard_arrow_right,
-                                //                 size: 32,
-                                //                 color: Color.fromARGB(
-                                //                     255, 77, 193, 216)),
-                                //             onPressed: () {
-                                //               _controller.nextPage(
-                                //                 duration:
-                                //                     Duration(milliseconds: 300),
-                                //                 curve: Curves.ease,
-                                //               );
-                                //             },
-                                //           ),
-                                //         ),
-                                //       ),
-                                //     ],
-                                //   ),
-                                // ),
+                                // Row(
+                                //   children: [CustomerCarousel()],
+                                // ),                            
                               ],
                             )
                           : Stack(
@@ -1372,7 +1274,7 @@ class _CustomerState extends State<Customer> {
                                           width: 193,
                                           height: 48,
                                           child: ElevatedButton(
-                                            onPressed: () {},
+                                            onPressed: () => context.go('/contact'),
                                             style: ElevatedButton.styleFrom(
                                               backgroundColor: Color.fromARGB(
                                                   255, 75, 195, 211),
@@ -1496,7 +1398,7 @@ class _CustomerState extends State<Customer> {
                                                     width: 193,
                                                     height: 46,
                                                     child: ElevatedButton(
-                                                      onPressed: () {},
+                                                      onPressed: () => context.go('/contact'),
                                                       style: ElevatedButton
                                                           .styleFrom(
                                                         backgroundColor:
@@ -1576,7 +1478,7 @@ class _CustomerState extends State<Customer> {
                                             width: 193,
                                             height: 46,
                                             child: ElevatedButton(
-                                              onPressed: () {},
+                                              onPressed: () => context.go('/contact'),
                                               style: ElevatedButton.styleFrom(
                                                 backgroundColor: Color.fromARGB(
                                                     255, 75, 195, 211),

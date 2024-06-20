@@ -148,7 +148,7 @@ class _Register extends State<Register> {
                                           padding:
                                               const EdgeInsets.only(left: 70),
                                           child: TextButton(                                           
-                                            onPressed: () => context.go('/registerdetail'),
+                                            onPressed: () => context.go('/demodetail'),
                                             child: Text(
                                               "ถัดไป",
                                               style:

@@ -65,7 +65,7 @@ class _NavigationBarState extends State<NavBar> {
               width: 120,
               child: InkWell(
                 hoverColor: Color.fromARGB(255, 52, 144, 206),
-                onTap: () => context.go('/'),
+                onTap: () => context.go('/homepage'),
                 child: Image.asset(
                   'assets/logo.png',
                 ),
@@ -136,6 +136,18 @@ class _NavigationBarState extends State<NavBar> {
                               : Color.fromARGB(255, 52, 144, 206),
                         ),
                       )),
+                       DropdownMenuItem(
+                      value: 'Our Products',
+                      onTap: () => context.go('/package'),
+                      child: Text(
+                        'Our Products',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: _selected
+                              ? Colors.white
+                              : Color.fromARGB(255, 52, 144, 206),
+                        ),
+                      )),
                 ],
                 value: AboutValue,
                 onChanged: (value) {
@@ -160,7 +172,7 @@ class _NavigationBarState extends State<NavBar> {
                   iconDisabledColor: Colors.white,
                 ),
                 dropdownStyleData: DropdownStyleData(
-                    maxHeight: 150,
+                    maxHeight: 190,
                     width: 150,
                     padding: null,
                     decoration: BoxDecoration(
@@ -216,18 +228,18 @@ class _NavigationBarState extends State<NavBar> {
                               : Color.fromARGB(255, 52, 144, 206),
                         ),
                       )),
-                  DropdownMenuItem(
-                      value: 'request',
-                      onTap: () => context.go('/demo'),
-                      child: Text(
-                        'Request Demo',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: _selected
-                              ? Colors.white
-                              : Color.fromARGB(255, 52, 144, 206),
-                        ),
-                      )),
+                  // DropdownMenuItem(
+                  //     value: 'request',
+                  //     onTap: () => context.go('/demo'),
+                  //     child: Text(
+                  //       'Request Demo',
+                  //       style: TextStyle(
+                  //         fontSize: 16,
+                  //         color: _selected
+                  //             ? Colors.white
+                  //             : Color.fromARGB(255, 52, 144, 206),
+                  //       ),
+                  //     )),
                 ],
                 value: ServicesValue,
                 onChanged: (value) {
@@ -237,7 +249,7 @@ class _NavigationBarState extends State<NavBar> {
                 },
                 buttonStyleData: ButtonStyleData(
                     height: 50,
-                    width: 160,
+                    width: 140,
                     padding: const EdgeInsets.only(left: 14, right: 14),
                     elevation: 0,
                     decoration: BoxDecoration(

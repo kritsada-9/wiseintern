@@ -8,7 +8,14 @@ class Footer extends StatefulWidget {
   Footer();
 
   @override
-  _FooterState createState() => _FooterState();
+  _FooterState createState() => _FooterState();  
+}
+
+
+class HoversocaiI {
+  final Image img;
+ 
+  HoversocaiI(this.img);
 }
 
 class Model {
@@ -28,6 +35,9 @@ class Services {
 class _FooterState extends State<Footer> {
   int? onHovernav;
   int? onHoverser;
+
+
+
   @override
   Widget build(BuildContext context) {
     // List<String> listLo = [
@@ -127,7 +137,7 @@ class _FooterState extends State<Footer> {
       Model("Home", "/"),
       Model("About Us", "/story"),
       Model("Our Rewards", "/story"),
-      Model("Blogs", "/"),
+      // Model("Blogs", "/"),
       Model("FAQ", "/faq")
     ];
 
@@ -189,7 +199,7 @@ class _FooterState extends State<Footer> {
             }));
 
     var services = Container(
-      width: 115.86,
+      width: 118.86,
       // height: 25,
       child: Text(
         "Our Services",
@@ -203,16 +213,16 @@ class _FooterState extends State<Footer> {
 
     List<Services> serviceButton = [
       Services("PDPA Management Platform", "/services"),
-      Services("Governance Assurance Master Suite", "/gams"),
-      Services("Get a Free Demo", "/demo"),
-      Services("Key Partners", "/"),
-      Services("Join Our Amazing Team", "/")
+      Services("GAMS Master Suite", "/gams"),
+      // Services("Get a Free Demo", "/demo"),
+      // Services("Key Partners", "/"),
+       Services("Join Our Amazing Team", "/")
     ];
 
     var serviceBut = Container(
         height: 160,
         // color: Colors.red,
-        width: 230,
+        width: 240,
         child: ListView.builder(
             shrinkWrap: true,
             itemCount: serviceButton.length,
@@ -271,6 +281,7 @@ class _FooterState extends State<Footer> {
         color: Colors.white,
       ),
     );
+
 
     final _nameController = TextEditingController();
     final _EmailController = TextEditingController();
@@ -547,20 +558,27 @@ class _FooterState extends State<Footer> {
                                           SizedBox(
                                             width: 10,
                                           ),
-                                          InkWell(
-                                              onTap: () {},
+                                                                           
+                                        // Padding(
+                                        //       padding: const EdgeInsets.only(top: 0),
+                                        //       child: Row(
+                                        //         children: [hoversocailImg],
+                                        //       ),
+                                        //     ),
+                                          InkWell( 
+                                              onTap: () => context.go('https://www.facebook.com/thewiseworks'),                                            
                                               child: Image.asset(
                                                   "assets/footer/fb.png")),
                                           InkWell(
-                                              onTap: () {},
+                                              onTap: () => context.go('https://www.instagram.com/thewiseworks'), 
                                               child: Image.asset(
                                                   "assets/footer/ig.png")),
                                           InkWell(
-                                              onTap: () {},
+                                              onTap: () => context.go('https://www.youtube.com/@thewiseworks8166'),
                                               child: Image.asset(
                                                   "assets/footer/yt.png")),
                                           InkWell(
-                                              onTap: () {},
+                                              onTap: () => context.go('https://www.tiktok.com/@thewiseworks'),
                                               child: Image.asset(
                                                   "assets/footer/tiktok.png")),
                                         ],
@@ -858,7 +876,7 @@ class _FooterState extends State<Footer> {
                                                       child: Row(
                                                         children: [
                                                           InkWell(
-                                                            onTap: () {},
+                                                            onTap: () => context.go('https://www.facebook.com/thewiseworks'), 
                                                             child: Container(
                                                                 width: 25,
                                                                 height: 25,
@@ -885,7 +903,7 @@ class _FooterState extends State<Footer> {
                                                                         .only(
                                                                     left: 20),
                                                             child: InkWell(
-                                                              onTap: () {},
+                                                              onTap: () => context.go('https://www.instagram.com/thewiseworks'), 
                                                               child: Container(
                                                                   width: 25,
                                                                   height: 25,
@@ -913,7 +931,7 @@ class _FooterState extends State<Footer> {
                                                                         .only(
                                                                     left: 20),
                                                             child: InkWell(
-                                                              onTap: () {},
+                                                              onTap: () => context.go('https://www.youtube.com/@thewiseworks8166'),
                                                               child: Container(
                                                                   width: 25,
                                                                   height: 25,
@@ -941,7 +959,7 @@ class _FooterState extends State<Footer> {
                                                                         .only(
                                                                     left: 20),
                                                             child: InkWell(
-                                                              onTap: () {},
+                                                              onTap: () => context.go('https://www.tiktok.com/@thewiseworks'),
                                                               child: Container(
                                                                   width: 25,
                                                                   height: 25,
@@ -1379,9 +1397,7 @@ class _FooterState extends State<Footer> {
                                                   width: 25,
                                                   height: 25,
                                                   child: InkWell(
-                                                    onTap: () {
-                                                      // do something when the button is tapped
-                                                    },
+                                                    onTap: () => context.go('https://www.facebook.com/thewiseworks'),
                                                     child: Image.asset(
                                                         'assets/footer/fb.png'),
                                                   ),
@@ -1399,9 +1415,7 @@ class _FooterState extends State<Footer> {
                                                   width: 25,
                                                   height: 25,
                                                   child: InkWell(
-                                                    onTap: () {
-                                                      // do something when the button is tapped
-                                                    },
+                                                    onTap: () => context.go('https://www.instagram.com/thewiseworks'),
                                                     child: Image.asset(
                                                         'assets/footer/ig.png'),
                                                   ),
@@ -1421,9 +1435,7 @@ class _FooterState extends State<Footer> {
                                                   width: 25,
                                                   height: 25,
                                                   child: InkWell(
-                                                    onTap: () {
-                                                      // do something when the button is tapped
-                                                    },
+                                                    onTap: () => context.go('https://www.youtube.com/@thewiseworks8166'),
                                                     child: Image.asset(
                                                         'assets/footer/yt.png'),
                                                   ),
@@ -1439,9 +1451,7 @@ class _FooterState extends State<Footer> {
                                                   width: 25,
                                                   height: 25,
                                                   child: InkWell(
-                                                    onTap: () {
-                                                      // do something when the button is tapped
-                                                    },
+                                                    onTap: () => context.go('https://www.tiktok.com/@thewiseworks'),
                                                     child: Image.asset(
                                                         'assets/footer/tiktok.png'),
                                                   ),

@@ -38,6 +38,153 @@
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+
+  <script>
+    window.onload = (event)=>{
+      var css = document.createElement('link');
+      css.rel = 'stylesheet'
+      css.href = 'https://pdpa.thewiseworks.com/Libs/CookieConsent-theme-1.v2.min.css'
+      document.getElementsByTagName('head')[0].appendChild(css);
+      var script = document.createElement('script');
+      script.onload = function () {
+       CSent.inititail({
+          consentCookieID: 96,
+          webkit: `Google`,
+          imageLogo: `https://isosuitestorage.blob.core.windows.net/isosuite/22F0BAE7-37AE-4A2A-BDA4-4A2BD68FA970.png`,
+          languageIsoCodes:  ['EN','TH'],
+          defaultLanguage: 'TH',
+          enableDetectLanguage: true,
+          injectCssModal: '',
+          detectMode: '',
+          languages: {
+            TH: {
+              labelFooterText: `เราใช้คุกกี้เพื่อเพิ่มประสิทธิภาพ และสร้างประสบการณ์ที่ดีให้กับท่าน รวมถึงเพื่อ จัดการข้อมูลส่วนบุคคลเพื่อให้ท่านได้รับประสบการณ์ที่ดีบนบริการ ของเว็บไซต์เรา หากท่านใช้บริการเว็บไซต์นี้ต่อไปโดยไม่มีการปรับ ตั้งค่าใดๆ นั่นเป็นการแสดงว่าท่านอนุญาตยินยอมที่จะรับคุกกี้บน เว็บไซต์และนโยบายสิทธิส่วนบุคคลของเรา`,
+              labelTitleModal: 'การตั้งค่าความเป็นส่วนตัว',
+              labelBtnPrivacyText: 'ตั้งค่า',
+              labelBtnTextOK: 'ยอมรับทั้งหมด',
+              labelPowerByText: 'Wisework',
+              labelTextPowerText: 'Power by',
+              labelSwithLeft: 'เปิดใช้งาน',
+              labelSwithRight: 'ปิดใช้งาน',
+              labelForceAllow: 'เปิดใช้งานตลอดเวลา',
+              labelBtnModelAccecpt: 'ยืนยันการตั้งค่า',
+            },
+            EN: {
+              labelFooterText: `We use cookies to improve performance. and create a good experience for you, including to manage your personal data so that you have a good experience on the Services; of our website If you continue to use this website without adjusting any settings, it indicates that you consent to accept cookies on Our Website and Privacy Policy`,
+              labelTitleModal: "Manage Consent Preferences",
+              labelBtnPrivacyText: "Setting",
+              labelBtnTextOK: "Allow all",
+              labelPowerByText: "Wisework",
+              labelTextPowerText: "Powered by",
+              labelSwithLeft: "Enable",
+              labelSwithRight: "Disable",
+              labelForceAllow: "ForceAllow",
+              labelBtnModelAccecpt: "Confirm setting",
+            }
+          },
+            categories: [{
+             code: `CA-002`
+             ,focusAllow: false
+             ,hasDispalyAllow:false
+             ,languages: {
+                  TH: { label: `คุกกี้พื้นฐานที่จำเป็น`}
+                  ,EN: { label:  `Necessary Cookies`}
+               }
+              ,purposes: [{
+              code: `CR-001-1`
+             ,focusAllow: true
+             ,hasDispalyAllow: true
+             ,injectCss: ``
+             ,languages: {
+                TH: {
+                  description: ` คุกกี้ประเภทนี้มีความสำคัญต่อการทำงานของเว็บไซต์ ซึ่งรวมถึงคุกกี้ที่ทำให้ท่านสามารถเข้าถึงข้อมูลและใช้งานในเว็บไซต์ของบริษัทฯ ได้อย่างปลอดภัย การจัดการเครือข่ายและการเข้าถึงข้อมูลและใช้งานในเว็บไซต์ของบริษัทฯ ได้ทุกส่วน `,
+                  title:  `คุกกี้พื้นฐานที่จำเป็น`,
+                },
+                EN: {
+                  description: ` Essential for the website's functionality, allowing secure access to information and use on all parts of the company's website.`,
+                  title:  `Necessary Cookies`,
+                }
+              }
+            }]
+             },{
+             code: `CR-001`
+             ,focusAllow: false
+             ,hasDispalyAllow:true
+             ,languages: {
+                  TH: { label: `คุกกี้สำหรับเก็บสถิติ `}
+                  ,EN: { label:  `Statistics Cookies`}
+               }
+              ,purposes: [{
+              code: `CA-002-1`
+             ,focusAllow: false
+             ,hasDispalyAllow: true
+             ,injectCss: ``
+             ,languages: {
+                TH: {
+                  description: ` คุกกี้ประเภทนี้จะช่วยให้บริษัทฯ สามารถจดจำและนับจำนวนผู้เข้าเยี่ยมชมเว็บไซต์ตลอดจนช่วยให้บริษัทฯ ทราบถึงพฤติกรรมในการเยี่ยมชมเว็บไซต์ เพื่อช่วยบริษัทฯ ปรับปรุงเว็บไซต์ของบริษัทฯ โดยรวบรวมและรายงานข้อมูลเกี่ยวกับวิธีการใช้งานของท่าน และช่วยให้บริษัทฯ เข้าใจถึงความสนใจของผู้ใช้ และวัดความมีประสิทธิผลของโฆษณาของบริษัทฯ คุกกี้จะรวบรวมข้อมูลในลักษณะที่ไม่สามารถระบุตัวบุคคลได้โดยตรง `,
+                  title:  `คุกกี้สำหรับเก็บสถิติ `,
+                },
+                EN: {
+                  description: ` Help count website visitors, understand user behavior, and gather information to improve the website, measure advertising effectiveness, and understand user interests.`,
+                  title:  `Statistics Cookies`,
+                }
+              }
+            }]
+             },{
+             code: `CM-003`
+             ,focusAllow: false
+             ,hasDispalyAllow:true
+             ,languages: {
+                  TH: { label: `คุกกี้ในส่วนการตลาด`}
+                  ,EN: { label:  `Marketing Cookies`}
+               }
+              ,purposes: [{
+              code: `CM-003-1`
+             ,focusAllow: false
+             ,hasDispalyAllow: true
+             ,injectCss: ``
+             ,languages: {
+                TH: {
+                  description: ` คุกกี้ประเภทนี้ใช้เพื่อผลประโยชน์ทางการตลาด เช่น การส่งเสริมการขาย วิเคราะห์พฤติกรรมของท่านเพื่อให้บริษัทฯสามารถนำเสนอสินค้าและบริการต่าง ๆ ให้เหมาะสม `,
+                  title:  `คุกกี้ในส่วนการตลาด`,
+                },
+                EN: {
+                  description: ` Utilized for marketing purposes, analyzing behavior to offer relevant products and services suitable for cookie management.`,
+                  title:  `Marketing Cookies`,
+                }
+              }
+            }]
+             }],
+            ciColor: {
+              footerPrivacyCompany: {
+              privacyTextLinkColor: '#3980ed',
+              privacyTextColor: '#ffffff',
+              privacySettingColor:  '#ffffff',
+              bgBtnOkTextColor: '#3980ed',
+              labelBtnTextOKBgColor: '#ffffff',
+               },
+            iconCookie: {
+                bgColor: '#3980ed',
+            },
+            modalCompany: {
+              modalTitleColor: '',
+              modalSubTitleColor: '',
+              btnRejectTextColor: '#FFFFFF',
+              btnRejectBgColor: '#f73e3e',
+              btnConfirmTextColor: '#ffffff',
+              btnConfirmBgColor: '#3980ed',
+              purposeTextColor: '',
+              purposeDetailText: '',
+              labeltextPowerColor: '',
+              powerByColor: '',
+            },
+          },
+        });
+      };
+      script.src = "https://pdpa.thewiseworks.com/api/CMSCookieConsent/GetScriptCookieConsent?template=theme-1&version=v3";
+      document.getElementsByTagName('head')[0].appendChild(script);
+      }
+  </script>
 </head>
 <body>
   <script>
@@ -54,5 +201,7 @@
       });
     });
   </script>
+
+  
 </body>
 </html>
