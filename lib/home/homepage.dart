@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 // import 'package:google_fonts/google_fonts.dart';
 import 'package:wiseintern/navbar.dart';
 
+import 'package:wiseintern/home/header_video.dart';
 import 'package:wiseintern/home/pdpa.dart';
 import 'package:wiseintern/home/features.dart';
 import 'package:wiseintern/home/packages.dart';
@@ -97,6 +98,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            HeaderHome(),
             StoryPage(),
             Pdpa(),
             FeaturesPage(),

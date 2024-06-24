@@ -167,6 +167,7 @@ flutter:
   - assets/packages/lock.png
   - assets/packages/cross.png
 
+  - assets/customer/
   - assets/customer/nia.png
   - assets/customer/Nikhom.png
   - assets/customer/Nutt.png
@@ -342,7 +343,7 @@ flutter:
   - assets/about/gams/AMS_04.png 
   - assets/about/gams/AMS_05.png 
   
-
+  - assets/images/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

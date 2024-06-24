@@ -42,6 +42,7 @@ class _Register extends State<Register> {
         child: Responsive.isDesktop(context)
             ? Container(
                 width: 1440,
+                // height: 1600,
                 child: Center(
                   child: Column(
                     children: [
@@ -55,7 +56,7 @@ class _Register extends State<Register> {
                             Column(
                               children: [
                                 Container(
-                                  height: 1614,
+                                  height: 1350,
                                   // color: Colors.amber,
                                   child: Column(
                                     crossAxisAlignment:
@@ -490,87 +491,7 @@ class _Register extends State<Register> {
                                                 ],
                                               ),
                                             ),
-                                            // Padding(
-                                            //   padding: const EdgeInsets.only(
-                                            //       left: 32),
-                                            //   child: Column(
-                                            //     crossAxisAlignment:
-                                            //         CrossAxisAlignment.start,
-                                            //     children: [
-                                            //       Wrap(
-                                            //         children: [
-                                            //           Container(
-                                            //             child: Text(
-                                            //               "ชื่อบริษัท",
-                                            //               style: GoogleFonts
-                                            //                   .ibmPlexSansThai(
-                                            //                       fontSize: 18,
-                                            //                       fontWeight:
-                                            //                           FontWeight
-                                            //                               .w400,
-                                            //                       color: Colors
-                                            //                           .black),
-                                            //             ),
-                                            //           ),
-                                            //           Container(
-                                            //             // width: 310,
-                                            //             child: Text(
-                                            //               "*",
-                                            //               style: GoogleFonts
-                                            //                   .ibmPlexSansThai(
-                                            //                       fontSize: 18,
-                                            //                       fontWeight:
-                                            //                           FontWeight
-                                            //                               .w400,
-                                            //                       color: Color
-                                            //                           .fromARGB(
-                                            //                               255,
-                                            //                               52,
-                                            //                               145,
-                                            //                               206)),
-                                            //             ),
-                                            //           ),
-                                            //         ],
-                                            //       ),
-                                            //       Container(
-                                            //         width: 310,
-                                            //         child: TextField(
-                                            //           decoration:
-                                            //               InputDecoration(
-                                            //             hintText:
-                                            //                 'The wisework co.,Ltd.',
-                                            //             hintStyle: GoogleFonts
-                                            //                 .ibmPlexSansThai(
-                                            //                     fontSize: 16,
-                                            //                     fontWeight:
-                                            //                         FontWeight
-                                            //                             .w500,
-                                            //                     color: Color
-                                            //                         .fromARGB(
-                                            //                             255,
-                                            //                             232,
-                                            //                             242,
-                                            //                             254)),
-                                            //             contentPadding:
-                                            //                 EdgeInsets.fromLTRB(
-                                            //                     0, 20, 0, 0),
-                                            //             border:
-                                            //                 UnderlineInputBorder(
-                                            //               borderSide:
-                                            //                   BorderSide(
-                                            //                       color: Color
-                                            //                           .fromARGB(
-                                            //                               255,
-                                            //                               52,
-                                            //                               145,
-                                            //                               206)),
-                                            //             ),
-                                            //           ),
-                                            //         ),
-                                            //       ),
-                                            //     ],
-                                            //   ),
-                                            // )
+                                            
                                           ],
                                         ),
                                       ),
@@ -757,249 +678,7 @@ class _Register extends State<Register> {
                                           ],
                                         ),
                                       ),
-                                      // Padding(
-                                      //   padding: const EdgeInsets.only(top: 64),
-                                      //   child: Row(
-                                      //     children: [
-                                      //       // Padding(
-                                      //       //   padding: const EdgeInsets.only(
-                                      //       //       left: 25),
-                                      //       //   child: Column(
-                                      //       //     crossAxisAlignment:
-                                      //       //         CrossAxisAlignment.start,
-                                      //       //     children: [
-                                      //       //       Wrap(
-                                      //       //         children: [
-                                      //       //           Container(
-                                      //       //             // width: 310,
-                                      //       //             child: Text(
-                                      //       //               "จำนวนผู้ใช้งาน",
-                                      //       //               style: GoogleFonts
-                                      //       //                   .ibmPlexSansThai(
-                                      //       //                       fontSize: 18,
-                                      //       //                       fontWeight:
-                                      //       //                           FontWeight
-                                      //       //                               .w400,
-                                      //       //                       color: Colors
-                                      //       //                           .black),
-                                      //       //             ),
-                                      //       //           ),
-                                      //       //           Container(
-                                      //       //             // width: 310,
-                                      //       //             child: Text(
-                                      //       //               "*",
-                                      //       //               style: GoogleFonts
-                                      //       //                   .ibmPlexSansThai(
-                                      //       //                       fontSize: 18,
-                                      //       //                       fontWeight:
-                                      //       //                           FontWeight
-                                      //       //                               .w400,
-                                      //       //                       color: Color
-                                      //       //                           .fromARGB(
-                                      //       //                               255,
-                                      //       //                               52,
-                                      //       //                               145,
-                                      //       //                               206)),
-                                      //       //             ),
-                                      //       //           ),
-                                      //       //         ],
-                                      //       //       ),
-                                      //       //       Container(
-                                      //       //         width: 310,
-                                      //       //         child: TextField(
-                                      //       //           keyboardType:
-                                      //       //               TextInputType.number,
-                                      //       //           inputFormatters: <TextInputFormatter>[
-                                      //       //             FilteringTextInputFormatter
-                                      //       //                 .digitsOnly
-                                      //       //           ],
-                                      //       //           decoration:
-                                      //       //               InputDecoration(
-                                      //       //             // hintText: 'hello@thewiseworks.com',
-                                      //       //             hintStyle: GoogleFonts
-                                      //       //                 .ibmPlexSansThai(
-                                      //       //                     fontSize: 16,
-                                      //       //                     fontWeight:
-                                      //       //                         FontWeight
-                                      //       //                             .w500,
-                                      //       //                     color: Color
-                                      //       //                         .fromARGB(
-                                      //       //                             255,
-                                      //       //                             232,
-                                      //       //                             242,
-                                      //       //                             254)),
-                                      //       //             contentPadding:
-                                      //       //                 EdgeInsets.fromLTRB(
-                                      //       //                     0, 20, 0, 0),
-                                      //       //             border:
-                                      //       //                 UnderlineInputBorder(
-                                      //       //               borderSide:
-                                      //       //                   BorderSide(
-                                      //       //                       color: Color
-                                      //       //                           .fromARGB(
-                                      //       //                               255,
-                                      //       //                               52,
-                                      //       //                               145,
-                                      //       //                               206)),
-                                      //       //             ),
-                                      //       //           ),
-                                      //       //         ),
-                                      //       //       ),
-                                      //       //     ],
-                                      //       //   ),
-                                      //       // ),
-                                      //       // Padding(
-                                      //       //   padding: const EdgeInsets.only(
-                                      //       //       left: 25),
-                                      //       //   child: Column(
-                                      //       //     crossAxisAlignment:
-                                      //       //         CrossAxisAlignment.start,
-                                      //       //     children: [
-                                      //       //       Wrap(
-                                      //       //         children: [
-                                      //       //           Container(
-                                      //       //             child: Text(
-                                      //       //               "เลือกประเภทธุรกิจ",
-                                      //       //               style: GoogleFonts
-                                      //       //                   .ibmPlexSansThai(
-                                      //       //                       fontSize: 18,
-                                      //       //                       fontWeight:
-                                      //       //                           FontWeight
-                                      //       //                               .w400,
-                                      //       //                       color: Colors
-                                      //       //                           .black),
-                                      //       //             ),
-                                      //       //           ),
-                                      //       //           Container(
-                                      //       //             // width: 310,
-                                      //       //             child: Text(
-                                      //       //               "*",
-                                      //       //               style: GoogleFonts
-                                      //       //                   .ibmPlexSansThai(
-                                      //       //                       fontSize: 18,
-                                      //       //                       fontWeight:
-                                      //       //                           FontWeight
-                                      //       //                               .w400,
-                                      //       //                       color: Color
-                                      //       //                           .fromARGB(
-                                      //       //                               255,
-                                      //       //                               52,
-                                      //       //                               145,
-                                      //       //                               206)),
-                                      //       //             ),
-                                      //       //           ),
-                                      //       //         ],
-                                      //       //       ),
-                                      //       //       Padding(
-                                      //       //         padding:
-                                      //       //             const EdgeInsets.only(
-                                      //       //                 top: 15),
-                                      //       //         child: Container(
-                                      //       //           width: 615,
-                                      //       //           height: 60,
-                                      //       //           decoration: BoxDecoration(
-                                      //       //               borderRadius:
-                                      //       //                   BorderRadius
-                                      //       //                       .circular(20),
-                                      //       //               color: Color.fromARGB(
-                                      //       //                   255,
-                                      //       //                   232,
-                                      //       //                   242,
-                                      //       //                   254)),
-                                      //       //           child:
-                                      //       //               DropdownButtonHideUnderline(
-                                      //       //             child: DropdownButton2(
-                                      //       //               value: selectedOption,
-                                      //       //               buttonStyleData:
-                                      //       //                   const ButtonStyleData(
-                                      //       //                       padding: const EdgeInsets
-                                      //       //                               .only(
-                                      //       //                           right:
-                                      //       //                               12)),
-                                      //       //               hint: Text(
-                                      //       //                 'เลือกประเภทธุรกิจ',
-                                      //       //                 style: GoogleFonts
-                                      //       //                     .ibmPlexSansThai(
-                                      //       //                         fontSize:
-                                      //       //                             18,
-                                      //       //                         fontWeight:
-                                      //       //                             FontWeight
-                                      //       //                                 .w500,
-                                      //       //                         color: Color
-                                      //       //                             .fromARGB(
-                                      //       //                                 255,
-                                      //       //                                 130,
-                                      //       //                                 130,
-                                      //       //                                 130)),
-                                      //       //               ),
-                                      //       //               iconStyleData:
-                                      //       //                   const IconStyleData(
-                                      //       //                 icon: Icon(
-                                      //       //                   Icons
-                                      //       //                       .arrow_drop_down_outlined,
-                                      //       //                 ),
-                                      //       //                 iconSize: 20,
-                                      //       //                 iconEnabledColor:
-                                      //       //                     Color.fromARGB(
-                                      //       //                         255,
-                                      //       //                         79,
-                                      //       //                         79,
-                                      //       //                         79),
-                                      //       //                 iconDisabledColor:
-                                      //       //                     Color.fromARGB(
-                                      //       //                         255,
-                                      //       //                         79,
-                                      //       //                         79,
-                                      //       //                         79),
-                                      //       //               ),
-                                      //       //               isExpanded: true,
-                                      //       //               items: optionsItem
-                                      //       //                   .map((option) {
-                                      //       //                 return DropdownMenuItem<
-                                      //       //                     String>(
-                                      //       //                   value: option,
-                                      //       //                   child: Text(
-                                      //       //                     option,
-                                      //       //                     style: GoogleFonts.ibmPlexSansThai(
-                                      //       //                         fontSize:
-                                      //       //                             16,
-                                      //       //                         fontWeight:
-                                      //       //                             FontWeight
-                                      //       //                                 .w500,
-                                      //       //                         color: Colors
-                                      //       //                             .black),
-                                      //       //                   ),
-                                      //       //                 );
-                                      //       //               }).toList(),
-                                      //       //               dropdownStyleData:
-                                      //       //                   DropdownStyleData(
-                                      //       //                 decoration:
-                                      //       //                     BoxDecoration(
-                                      //       //                   borderRadius:
-                                      //       //                       BorderRadius
-                                      //       //                           .circular(
-                                      //       //                               5),
-                                      //       //                   color:
-                                      //       //                       Colors.white,
-                                      //       //                 ),
-                                      //       //               ),
-                                      //       //               // itemHeight: 8,
-                                      //       //               onChanged: (value) {
-                                      //       //                 setState(() {
-                                      //       //                   selectedOption =
-                                      //       //                       value;
-                                      //       //                 });
-                                      //       //               },
-                                      //       //             ),
-                                      //       //           ),
-                                      //       //         ),
-                                      //       //       )
-                                      //       //     ],
-                                      //       //   ),
-                                      //       // )
-                                      //     ],
-                                      //   ),
-                                      // ),
+                                     
                                       Padding(
                                         padding: const EdgeInsets.only(
                                             left: 25, top: 36),
@@ -1007,196 +686,7 @@ class _Register extends State<Register> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            // Container(
-                                            //   child: Text(
-                                            //     "แพ็กเกจ",
-                                            //     style:
-                                            //         GoogleFonts.ibmPlexSansThai(
-                                            //             fontSize: 18,
-                                            //             fontWeight:
-                                            //                 FontWeight.w500,
-                                            //             color: Color.fromARGB(
-                                            //                 255, 51, 51, 51)),
-                                            //   ),
-                                            // ),
-                                            // Padding(
-                                            //   padding: const EdgeInsets.only(
-                                            //       top: 15),
-                                            //   child: Container(
-                                            //     width: 615,
-                                            //     height: 60,
-                                            //     decoration: BoxDecoration(
-                                            //         borderRadius:
-                                            //             BorderRadius.circular(
-                                            //                 20),
-                                            //         color: Color.fromARGB(
-                                            //             255, 232, 242, 254)),
-                                            //     child:
-                                            //         DropdownButtonHideUnderline(
-                                            //       child: DropdownButton2(
-                                            //         buttonStyleData:
-                                            //             const ButtonStyleData(
-                                            //                 padding:
-                                            //                     const EdgeInsets
-                                            //                             .only(
-                                            //                         right: 12)),
-                                            //         value: selectedPackage,
-                                            //         hint: Text(
-                                            //           'เลือกแพ็กเกจ',
-                                            //           style: GoogleFonts
-                                            //               .ibmPlexSansThai(
-                                            //                   fontSize: 18,
-                                            //                   fontWeight:
-                                            //                       FontWeight
-                                            //                           .w500,
-                                            //                   color: Color
-                                            //                       .fromARGB(
-                                            //                           255,
-                                            //                           130,
-                                            //                           130,
-                                            //                           130)),
-                                            //         ),
-                                            //         iconStyleData:
-                                            //             const IconStyleData(
-                                            //           icon: Icon(
-                                            //             Icons
-                                            //                 .arrow_drop_down_outlined,
-                                            //           ),
-                                            //           iconSize: 20,
-                                            //           iconEnabledColor:
-                                            //               Color.fromARGB(
-                                            //                   255, 79, 79, 79),
-                                            //           iconDisabledColor:
-                                            //               Color.fromARGB(
-                                            //                   255, 79, 79, 79),
-                                            //         ),
-                                            //         isExpanded: true,
-                                            //         items: packageItem
-                                            //             .map((option) {
-                                            //           return DropdownMenuItem<
-                                            //               String>(
-                                            //             value: option,
-                                            //             child: Text(
-                                            //               option,
-                                            //               style: GoogleFonts
-                                            //                   .ibmPlexSansThai(
-                                            //                       fontSize: 16,
-                                            //                       fontWeight:
-                                            //                           FontWeight
-                                            //                               .w500,
-                                            //                       color: Colors
-                                            //                           .black),
-                                            //             ),
-                                            //           );
-                                            //         }).toList(),
-                                            //         dropdownStyleData:
-                                            //             DropdownStyleData(
-                                            //           decoration: BoxDecoration(
-                                            //             borderRadius:
-                                            //                 BorderRadius
-                                            //                     .circular(5),
-                                            //             color: Colors.white,
-                                            //           ),
-                                            //         ),
-                                            //         // itemHeight: 8,
-                                            //         onChanged: (value) {
-                                            //           setState(() {
-                                            //             selectedPackage = value;
-                                            //           });
-                                            //         },
-                                            //       ),
-                                            //     ),
-                                            //   ),
-                                            // ),
-                                            // Padding(
-                                            //   padding: const EdgeInsets.only(
-                                            //       top: 36, left: 25),
-                                            //   child: Container(
-                                            //     width: 628,
-                                            //     height: 220,
-                                            //     decoration: BoxDecoration(
-                                            //         color: Colors.white,
-                                            //         borderRadius:
-                                            //             BorderRadius.circular(
-                                            //                 20),
-                                            //         border: Border.all(
-                                            //             color: Color.fromARGB(
-                                            //                 255, 232, 242, 254),
-                                            //             width: 1)),
-                                            //     child: Column(
-                                            //       crossAxisAlignment:
-                                            //           CrossAxisAlignment.start,
-                                            //       children: [
-                                            //         // Padding(
-                                            //         //   padding:
-                                            //         //       const EdgeInsets.only(
-                                            //         //           top: 29,
-                                            //         //           left: 15),
-                                            //         //   child: Text(
-                                            //         //     "โมดูลผลิตภัณฑ์",
-                                            //         //     style: GoogleFonts
-                                            //         //         .ibmPlexSansThai(
-                                            //         //             fontSize: 20,
-                                            //         //             fontWeight:
-                                            //         //                 FontWeight
-                                            //         //                     .w600,
-                                            //         //             color: Colors
-                                            //         //                 .black),
-                                            //         //     textAlign:
-                                            //         //         TextAlign.start,
-                                            //         //   ),
-                                            //         // ),
-                                            //         // Padding(
-                                            //         //   padding:
-                                            //         //       const EdgeInsets.only(
-                                            //         //           top: 18,
-                                            //         //           left: 15),
-                                            //         //   child: Container(
-                                            //         //     width: 310,
-                                            //         //     decoration: BoxDecoration(
-                                            //         //         color:
-                                            //         //             Color.fromARGB(
-                                            //         //                 255,
-                                            //         //                 75,
-                                            //         //                 195,
-                                            //         //                 211),
-                                            //         //         border: Border.all(
-                                            //         //             color: Color
-                                            //         //                 .fromARGB(
-                                            //         //                     255,
-                                            //         //                     52,
-                                            //         //                     145,
-                                            //         //                     206),
-                                            //         //             width: 1)),
-                                            //         //   ),
-                                            //         // ),
-                                            //         // Padding(
-                                            //         //   padding:
-                                            //         //       const EdgeInsets.only(
-                                            //         //           top: 18,
-                                            //         //           left: 15),
-                                            //         //   child: Text(
-                                            //         //     "CMC (Consent Management)\nPDM (Personal Data Management)\nDSR (Data Subject Right Management)",
-                                            //         //     style: GoogleFonts
-                                            //         //         .ibmPlexSansThai(
-                                            //         //             fontSize: 18,
-                                            //         //             fontWeight:
-                                            //         //                 FontWeight
-                                            //         //                     .w400,
-                                            //         //             color: Color
-                                            //         //                 .fromARGB(
-                                            //         //                     255,
-                                            //         //                     130,
-                                            //         //                     130,
-                                            //         //                     130)),
-                                            //         //     textAlign:
-                                            //         //         TextAlign.start,
-                                            //         //   ),
-                                            //         // ),
-                                            //       ],
-                                            //     ),
-                                            //   ),
-                                            // ),
+                                           
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   top: 36),
@@ -1205,7 +695,7 @@ class _Register extends State<Register> {
                                                   width: 344,
                                                   height: 66,
                                                   child: ElevatedButton(
-                                                    onPressed: () {},
+                                                    onPressed: () => context.go('/demodetail'),
                                                     style: ElevatedButton
                                                         .styleFrom(
                                                       backgroundColor:
@@ -1341,7 +831,7 @@ class _Register extends State<Register> {
                       ),
                       Container(
                         width: 1440,
-                        height: 1578,
+                        height: 800,
                         color: Color.fromARGB(255, 245, 245, 245),
                         child: Center(
                           child: Column(
@@ -1519,21 +1009,7 @@ class _Register extends State<Register> {
                                   ],
                                 ),
                               ),
-                              // Padding(
-                              //   padding: const EdgeInsets.only(top: 130),
-                              //   child: Container(
-                              //     width: 1170,
-                              //     height: 760,
-                              //     decoration: BoxDecoration(
-                              //         borderRadius: BorderRadius.circular(20),
-                              //         color: Colors.white),
-                              //     child: SizedBox(
-                              //         width: 1161,
-                              //         height: 751,
-                              //         child: Image.asset(
-                              //             "assets/demo/dashboard.png")),
-                              //   ),
-                              // )
+
                             ],
                           ),
                         ),
@@ -1543,14 +1019,14 @@ class _Register extends State<Register> {
                 ),
               )
             : Center(
-                child: Column(
+                child: Column(    
                   children: [
                     Container(
                       width: 1440,
-                      height: Responsive.isTablet(context) ? 1636 : 1800,
+                      height: Responsive.isTablet(context) ? 1336 : 1100,
                       color: Color.fromARGB(255, 232, 242, 252),
-                      child: Center(
-                        child: Column(
+                      child: Center(        
+                        child: Column(    
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Responsive.isTablet(context)
@@ -1605,11 +1081,11 @@ class _Register extends State<Register> {
                                   padding: const EdgeInsets.only(top: 60),
                                   child: Container(
                                     width: Responsive.isTablet(context)
-                                        ? 726
+                                        ? 626
                                         : 350,
                                     height: Responsive.isTablet(context)
                                         ? 1000
-                                        : 1300,
+                                        : 850,
                                     decoration: BoxDecoration(
                                         borderRadius:
                                             Responsive.isTablet(context)
@@ -1763,90 +1239,7 @@ class _Register extends State<Register> {
                                                             ),
                                                           ],
                                                         ),
-                                                      ),
-                                                      // Padding(
-                                                      //   padding:
-                                                      //       const EdgeInsets
-                                                      //           .only(left: 32),
-                                                      //   child: Column(
-                                                      //     crossAxisAlignment:
-                                                      //         CrossAxisAlignment
-                                                      //             .start,
-                                                      //     children: [
-                                                      //       Wrap(
-                                                      //         children: [
-                                                      //           Container(
-                                                      //             child: Text(
-                                                      //               "ชื่อบริษัท",
-                                                      //               style: GoogleFonts.ibmPlexSansThai(
-                                                      //                   fontSize:
-                                                      //                       18,
-                                                      //                   fontWeight:
-                                                      //                       FontWeight
-                                                      //                           .w400,
-                                                      //                   color: Colors
-                                                      //                       .black),
-                                                      //             ),
-                                                      //           ),
-                                                      //           Container(
-                                                      //             // width: 310,
-                                                      //             child: Text(
-                                                      //               "*",
-                                                      //               style: GoogleFonts.ibmPlexSansThai(
-                                                      //                   fontSize:
-                                                      //                       18,
-                                                      //                   fontWeight:
-                                                      //                       FontWeight
-                                                      //                           .w400,
-                                                      //                   color: Color.fromARGB(
-                                                      //                       255,
-                                                      //                       52,
-                                                      //                       145,
-                                                      //                       206)),
-                                                      //             ),
-                                                      //           ),
-                                                      //         ],
-                                                      //       ),
-                                                      //       Container(
-                                                      //         width: 310,
-                                                      //         child: TextField(
-                                                      //           decoration:
-                                                      //               InputDecoration(
-                                                      //             hintText:
-                                                      //                 'The wisework co.,Ltd.',
-                                                      //             hintStyle: GoogleFonts.ibmPlexSansThai(
-                                                      //                 fontSize:
-                                                      //                     16,
-                                                      //                 fontWeight:
-                                                      //                     FontWeight
-                                                      //                         .w500,
-                                                      //                 color: Color.fromARGB(
-                                                      //                     255,
-                                                      //                     232,
-                                                      //                     242,
-                                                      //                     254)),
-                                                      //             contentPadding:
-                                                      //                 EdgeInsets
-                                                      //                     .fromLTRB(
-                                                      //                         0,
-                                                      //                         20,
-                                                      //                         0,
-                                                      //                         0),
-                                                      //             border:
-                                                      //                 UnderlineInputBorder(
-                                                      //               borderSide: BorderSide(
-                                                      //                   color: Color.fromARGB(
-                                                      //                       255,
-                                                      //                       52,
-                                                      //                       145,
-                                                      //                       206)),
-                                                      //             ),
-                                                      //           ),
-                                                      //         ),
-                                                      //       ),
-                                                      //     ],
-                                                      //   ),
-                                                      // ),
+                                                      ),                                                   
                                                     ],
                                                   )
                                                 : Column(
@@ -1934,93 +1327,7 @@ class _Register extends State<Register> {
                                                             ),
                                                           ],
                                                         ),
-                                                      ),
-                                                      // Padding(
-                                                      //   padding:
-                                                      //       const EdgeInsets
-                                                      //               .only(
-                                                      //           top: 32,
-                                                      //           left: 25),
-                                                      //   child: Column(
-                                                      //     crossAxisAlignment:
-                                                      //         CrossAxisAlignment
-                                                      //             .start,
-                                                      //     children: [
-                                                      //       Wrap(
-                                                      //         children: [
-                                                      //           Container(
-                                                      //             // width: 310,
-                                                      //             child: Text(
-                                                      //               "ชื่อบริษัท",
-                                                      //               style: GoogleFonts.ibmPlexSansThai(
-                                                      //                   fontSize:
-                                                      //                       18,
-                                                      //                   fontWeight:
-                                                      //                       FontWeight
-                                                      //                           .w400,
-                                                      //                   color: Colors
-                                                      //                       .black),
-                                                      //             ),
-                                                      //           ),
-                                                      //           Container(
-                                                      //             // width: 310,
-                                                      //             child: Text(
-                                                      //               "*",
-                                                      //               style: GoogleFonts.ibmPlexSansThai(
-                                                      //                   fontSize:
-                                                      //                       18,
-                                                      //                   fontWeight:
-                                                      //                       FontWeight
-                                                      //                           .w400,
-                                                      //                   color: Color.fromARGB(
-                                                      //                       255,
-                                                      //                       52,
-                                                      //                       145,
-                                                      //                       206)),
-                                                      //             ),
-                                                      //           ),
-                                                      //         ],
-                                                      //       ),
-                                                      //       Container(
-                                                      //         width: 300,
-                                                      //         child: TextField(
-                                                      //           decoration:
-                                                      //               InputDecoration(
-                                                      //             hintText:
-                                                      //                 'The wisework co.,Ltd.',
-                                                      //             hintStyle: GoogleFonts.ibmPlexSansThai(
-                                                      //                 fontSize:
-                                                      //                     16,
-                                                      //                 fontWeight:
-                                                      //                     FontWeight
-                                                      //                         .w500,
-                                                      //                 color: Color.fromARGB(
-                                                      //                     255,
-                                                      //                     232,
-                                                      //                     242,
-                                                      //                     254)),
-                                                      //             contentPadding:
-                                                      //                 EdgeInsets
-                                                      //                     .fromLTRB(
-                                                      //                         0,
-                                                      //                         20,
-                                                      //                         0,
-                                                      //                         0),
-                                                      //             border:
-                                                      //                 UnderlineInputBorder(
-                                                      //               borderSide: BorderSide(
-                                                      //                   color: Color.fromARGB(
-                                                      //                       255,
-                                                      //                       52,
-                                                      //                       145,
-                                                      //                       206)),
-                                                      //             ),
-                                                      //           ),
-                                                      //         ),
-                                                      //       ),
-                                                      //     ],
-                                                      //   ),
-                                                      // ),
+                                                      ),                                                    
                                                     ],
                                                   )),
                                         Padding(
@@ -2382,411 +1689,7 @@ class _Register extends State<Register> {
                                                         ),
                                                       ),
                                                     ],
-                                                  )),
-                                        // Padding(
-                                        //     padding:
-                                        //         const EdgeInsets.only(top: 36),
-                                        //     child: Responsive.isTablet(context)
-                                        //         ? Row(
-                                        //             children: [
-                                        //               // Padding(
-                                        //               //   padding:
-                                        //               //       const EdgeInsets
-                                        //               //           .only(left: 25),
-                                        //               //   child: Column(
-                                        //               //     crossAxisAlignment:
-                                        //               //         CrossAxisAlignment
-                                        //               //             .start,
-                                        //               //     children: [
-                                        //               //       Wrap(
-                                        //               //         children: [
-                                        //               //           Container(
-                                        //               //             child: Text(
-                                        //               //               "เลือกประเภทธุรกิจ",
-                                        //               //               style: GoogleFonts.ibmPlexSansThai(
-                                        //               //                   fontSize:
-                                        //               //                       18,
-                                        //               //                   fontWeight:
-                                        //               //                       FontWeight
-                                        //               //                           .w400,
-                                        //               //                   color: Colors
-                                        //               //                       .black),
-                                        //               //             ),
-                                        //               //           ),
-                                        //               //           Container(
-                                        //               //             // width: 310,
-                                        //               //             child: Text(
-                                        //               //               "*",
-                                        //               //               style: GoogleFonts.ibmPlexSansThai(
-                                        //               //                   fontSize:
-                                        //               //                       18,
-                                        //               //                   fontWeight:
-                                        //               //                       FontWeight
-                                        //               //                           .w400,
-                                        //               //                   color: Color.fromARGB(
-                                        //               //                       255,
-                                        //               //                       52,
-                                        //               //                       145,
-                                        //               //                       206)),
-                                        //               //             ),
-                                        //               //           ),
-                                        //               //         ],
-                                        //               //       ),
-                                        //               //       Padding(
-                                        //               //         padding:
-                                        //               //             const EdgeInsets
-                                        //               //                     .only(
-                                        //               //                 top: 15),
-                                        //               //         child: Container(
-                                        //               //           width: 600,
-                                        //               //           height: 60,
-                                        //               //           decoration: BoxDecoration(
-                                        //               //               borderRadius:
-                                        //               //                   BorderRadius.circular(
-                                        //               //                       20),
-                                        //               //               color: Color
-                                        //               //                   .fromARGB(
-                                        //               //                       255,
-                                        //               //                       232,
-                                        //               //                       242,
-                                        //               //                       254)),
-                                        //               //           child:
-                                        //               //               DropdownButtonHideUnderline(
-                                        //               //             child:
-                                        //               //                 DropdownButton2(
-                                        //               //               buttonStyleData:
-                                        //               //                   const ButtonStyleData(
-                                        //               //                       padding:
-                                        //               //                           const EdgeInsets.only(right: 12)),
-                                        //               //               value:
-                                        //               //                   selectedOption,
-                                        //               //               hint: Text(
-                                        //               //                 'เลือกประเภทธุรกิจ',
-                                        //               //                 style: GoogleFonts.ibmPlexSansThai(
-                                        //               //                     fontSize:
-                                        //               //                         18,
-                                        //               //                     fontWeight: FontWeight
-                                        //               //                         .w500,
-                                        //               //                     color: Color.fromARGB(
-                                        //               //                         255,
-                                        //               //                         130,
-                                        //               //                         130,
-                                        //               //                         130)),
-                                        //               //               ),
-                                        //               //               iconStyleData:
-                                        //               //                   const IconStyleData(
-                                        //               //                 icon:
-                                        //               //                     Icon(
-                                        //               //                   Icons
-                                        //               //                       .arrow_drop_down_outlined,
-                                        //               //                 ),
-                                        //               //                 iconSize:
-                                        //               //                     20,
-                                        //               //                 iconEnabledColor:
-                                        //               //                     Color.fromARGB(
-                                        //               //                         255,
-                                        //               //                         79,
-                                        //               //                         79,
-                                        //               //                         79),
-                                        //               //                 iconDisabledColor:
-                                        //               //                     Color.fromARGB(
-                                        //               //                         255,
-                                        //               //                         79,
-                                        //               //                         79,
-                                        //               //                         79),
-                                        //               //               ),
-                                        //               //               isExpanded:
-                                        //               //                   true,
-                                        //               //               items: optionsItem
-                                        //               //                   .map(
-                                        //               //                       (option) {
-                                        //               //                 return DropdownMenuItem<
-                                        //               //                     String>(
-                                        //               //                   value:
-                                        //               //                       option,
-                                        //               //                   child:
-                                        //               //                       Text(
-                                        //               //                     option,
-                                        //               //                     style: GoogleFonts.ibmPlexSansThai(
-                                        //               //                         fontSize: 16,
-                                        //               //                         fontWeight: FontWeight.w500,
-                                        //               //                         color: Colors.black),
-                                        //               //                   ),
-                                        //               //                 );
-                                        //               //               }).toList(),
-                                        //               //               dropdownStyleData:
-                                        //               //                   DropdownStyleData(
-                                        //               //                 decoration:
-                                        //               //                     BoxDecoration(
-                                        //               //                   borderRadius:
-                                        //               //                       BorderRadius.circular(5),
-                                        //               //                   color: Colors
-                                        //               //                       .white,
-                                        //               //                 ),
-                                        //               //               ),
-                                        //               //               // itemHeight: 8,
-                                        //               //               onChanged:
-                                        //               //                   (value) {
-                                        //               //                 setState(
-                                        //               //                     () {
-                                        //               //                   selectedOption =
-                                        //               //                       value;
-                                        //               //                 });
-                                        //               //               },
-                                        //               //             ),
-                                        //               //           ),
-                                        //               //         ),
-                                        //               //       )
-                                        //               //     ],
-                                        //               //   ),
-                                        //               // )
-                                        //             ],
-                                        //           )
-                                        //         : Column(
-                                        //             children: [
-                                        //               // Padding(
-                                        //               //   padding:
-                                        //               //       const EdgeInsets
-                                        //               //           .only(left: 25),
-                                        //               //   child: Column(
-                                        //               //     crossAxisAlignment:
-                                        //               //         CrossAxisAlignment
-                                        //               //             .start,
-                                        //               //     children: [
-                                        //               //       Wrap(
-                                        //               //         children: [
-                                        //               //           Container(
-                                        //               //             // width: 310,
-                                        //               //             child: Text(
-                                        //               //               "จำนวนผู้ใช้งาน",
-                                        //               //               style: GoogleFonts.ibmPlexSansThai(
-                                        //               //                   fontSize:
-                                        //               //                       18,
-                                        //               //                   fontWeight:
-                                        //               //                       FontWeight
-                                        //               //                           .w400,
-                                        //               //                   color: Colors
-                                        //               //                       .black),
-                                        //               //             ),
-                                        //               //           ),
-                                        //               //           Container(
-                                        //               //             // width: 310,
-                                        //               //             child: Text(
-                                        //               //               "*",
-                                        //               //               style: GoogleFonts.ibmPlexSansThai(
-                                        //               //                   fontSize:
-                                        //               //                       18,
-                                        //               //                   fontWeight:
-                                        //               //                       FontWeight
-                                        //               //                           .w400,
-                                        //               //                   color: Color.fromARGB(
-                                        //               //                       255,
-                                        //               //                       52,
-                                        //               //                       145,
-                                        //               //                       206)),
-                                        //               //             ),
-                                        //               //           ),
-                                        //               //         ],
-                                        //               //       ),
-                                        //               //       Container(
-                                        //               //         width: 300,
-                                        //               //         child: TextField(
-                                        //               //           keyboardType:
-                                        //               //               TextInputType
-                                        //               //                   .number,
-                                        //               //           inputFormatters: <TextInputFormatter>[
-                                        //               //             FilteringTextInputFormatter
-                                        //               //                 .digitsOnly
-                                        //               //           ],
-                                        //               //           decoration:
-                                        //               //               InputDecoration(
-                                        //               //             // hintText: 'hello@thewiseworks.com',
-                                        //               //             hintStyle: GoogleFonts.ibmPlexSansThai(
-                                        //               //                 fontSize:
-                                        //               //                     16,
-                                        //               //                 fontWeight:
-                                        //               //                     FontWeight
-                                        //               //                         .w500,
-                                        //               //                 color: Color.fromARGB(
-                                        //               //                     255,
-                                        //               //                     232,
-                                        //               //                     242,
-                                        //               //                     254)),
-                                        //               //             contentPadding:
-                                        //               //                 EdgeInsets
-                                        //               //                     .fromLTRB(
-                                        //               //                         0,
-                                        //               //                         20,
-                                        //               //                         0,
-                                        //               //                         0),
-                                        //               //             border:
-                                        //               //                 UnderlineInputBorder(
-                                        //               //               borderSide: BorderSide(
-                                        //               //                   color: Color.fromARGB(
-                                        //               //                       255,
-                                        //               //                       52,
-                                        //               //                       145,
-                                        //               //                       206)),
-                                        //               //             ),
-                                        //               //           ),
-                                        //               //         ),
-                                        //               //       ),
-                                        //               //     ],
-                                        //               //   ),
-                                        //               // ),
-                                        //               // Padding(
-                                        //               //   padding:
-                                        //               //       const EdgeInsets
-                                        //               //           .only(left: 25),
-                                        //               //   child: Column(
-                                        //               //     crossAxisAlignment:
-                                        //               //         CrossAxisAlignment
-                                        //               //             .start,
-                                        //               //     children: [
-                                        //               //       Wrap(
-                                        //               //         children: [
-                                        //               //           Container(
-                                        //               //             child: Text(
-                                        //               //               "ประเภทธุรกิจ",
-                                        //               //               style: GoogleFonts.ibmPlexSansThai(
-                                        //               //                   fontSize:
-                                        //               //                       14,
-                                        //               //                   fontWeight:
-                                        //               //                       FontWeight
-                                        //               //                           .w400,
-                                        //               //                   color: Colors
-                                        //               //                       .black),
-                                        //               //             ),
-                                        //               //           ),
-                                        //               //           Container(
-                                        //               //             // width: 310,
-                                        //               //             child: Text(
-                                        //               //               "*",
-                                        //               //               style: GoogleFonts.ibmPlexSansThai(
-                                        //               //                   fontSize:
-                                        //               //                       18,
-                                        //               //                   fontWeight:
-                                        //               //                       FontWeight
-                                        //               //                           .w400,
-                                        //               //                   color: Color.fromARGB(
-                                        //               //                       255,
-                                        //               //                       52,
-                                        //               //                       145,
-                                        //               //                       206)),
-                                        //               //             ),
-                                        //               //           ),
-                                        //               //         ],
-                                        //               //       ),
-                                        //               //       // Padding(
-                                        //               //       //   padding:
-                                        //               //       //       const EdgeInsets
-                                        //               //       //               .only(
-                                        //               //       //           top: 15),
-                                        //               //       //   child: Container(
-                                        //               //       //     width: 280,
-                                        //               //       //     height: 40,
-                                        //               //       //     decoration: BoxDecoration(
-                                        //               //       //         borderRadius:
-                                        //               //       //             BorderRadius.circular(
-                                        //               //       //                 20),
-                                        //               //       //         color: Color
-                                        //               //       //             .fromARGB(
-                                        //               //       //                 255,
-                                        //               //       //                 232,
-                                        //               //       //                 242,
-                                        //               //       //                 254)),
-                                        //               //       //     child:
-                                        //               //       //         DropdownButtonHideUnderline(
-                                        //               //       //       child:
-                                        //               //       //           DropdownButton2(
-                                        //               //       //         buttonStyleData:
-                                        //               //       //             const ButtonStyleData(
-                                        //               //       //                 padding:
-                                        //               //       //                     const EdgeInsets.only(right: 12)),
-                                        //               //       //         value:
-                                        //               //       //             selectedOption,
-                                        //               //       //         hint: Text(
-                                        //               //       //           'เลือกประเภทธุรกิจ',
-                                        //               //       //           style: GoogleFonts.ibmPlexSansThai(
-                                        //               //       //               fontSize:
-                                        //               //       //                   18,
-                                        //               //       //               fontWeight: FontWeight
-                                        //               //       //                   .w500,
-                                        //               //       //               color: Color.fromARGB(
-                                        //               //       //                   255,
-                                        //               //       //                   130,
-                                        //               //       //                   130,
-                                        //               //       //                   130)),
-                                        //               //       //         ),
-                                        //               //       //         iconStyleData:
-                                        //               //       //             const IconStyleData(
-                                        //               //       //           icon:
-                                        //               //       //               Icon(
-                                        //               //       //             Icons
-                                        //               //       //                 .arrow_drop_down_outlined,
-                                        //               //       //           ),
-                                        //               //       //           iconSize:
-                                        //               //       //               20,
-                                        //               //       //           iconEnabledColor:
-                                        //               //       //               Color.fromARGB(
-                                        //               //       //                   255,
-                                        //               //       //                   79,
-                                        //               //       //                   79,
-                                        //               //       //                   79),
-                                        //               //       //           iconDisabledColor:
-                                        //               //       //               Color.fromARGB(
-                                        //               //       //                   255,
-                                        //               //       //                   79,
-                                        //               //       //                   79,
-                                        //               //       //                   79),
-                                        //               //       //         ),
-                                        //               //       //         isExpanded:
-                                        //               //       //             true,
-                                        //               //       //         items: optionsItem
-                                        //               //       //             .map(
-                                        //               //       //                 (option) {
-                                        //               //       //           return DropdownMenuItem<
-                                        //               //       //               String>(
-                                        //               //       //             value:
-                                        //               //       //                 option,
-                                        //               //       //             child:
-                                        //               //       //                 Text(
-                                        //               //       //               option,
-                                        //               //       //               style: GoogleFonts.ibmPlexSansThai(
-                                        //               //       //                   fontSize: 16,
-                                        //               //       //                   fontWeight: FontWeight.w500,
-                                        //               //       //                   color: Colors.black),
-                                        //               //       //             ),
-                                        //               //       //           );
-                                        //               //       //         }).toList(),
-                                        //               //       //         dropdownStyleData:
-                                        //               //       //             DropdownStyleData(
-                                        //               //       //           decoration:
-                                        //               //       //               BoxDecoration(
-                                        //               //       //             borderRadius:
-                                        //               //       //                 BorderRadius.circular(5),
-                                        //               //       //             color: Colors
-                                        //               //       //                 .white,
-                                        //               //       //           ),
-                                        //               //       //         ),
-                                        //               //       //         // itemHeight: 8,
-                                        //               //       //         onChanged:
-                                        //               //       //             (value) {
-                                        //               //       //           setState(
-                                        //               //       //               () {
-                                        //               //       //             selectedOption =
-                                        //               //       //                 value;
-                                        //               //       //           });
-                                        //               //       //         },
-                                        //               //       //       ),
-                                        //               //       //     ),
-                                        //               //       //   ),
-                                        //               //       // )
-                                        //               //     ],
-                                        //               //   ),
-                                        //               // )
-                                        //             ],
-                                        //           )),
+                                                  )),                                        
                                         Padding(
                                           padding:
                                               const EdgeInsets.only(top: 36),
@@ -2794,237 +1697,7 @@ class _Register extends State<Register> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              // Padding(
-                                              //   padding: const EdgeInsets.only(
-                                              //       left: 25),
-                                              //   child: Container(
-                                              //     child: Text(
-                                              //       "แพ็กเกจ",
-                                              //       style: GoogleFonts
-                                              //           .ibmPlexSansThai(
-                                              //               fontSize: Responsive
-                                              //                       .isTablet(
-                                              //                           context)
-                                              //                   ? 24
-                                              //                   : 18,
-                                              //               fontWeight:
-                                              //                   FontWeight.w500,
-                                              //               color:
-                                              //                   Color.fromARGB(
-                                              //                       255,
-                                              //                       51,
-                                              //                       51,
-                                              //                       51)),
-                                              //     ),
-                                              //   ),
-                                              // ),
-                                              // Padding(
-                                              //   padding: const EdgeInsets.only(
-                                              //       top: 15, left: 25),
-                                              //   child: Container(
-                                              //     width: Responsive.isTablet(
-                                              //             context)
-                                              //         ? 600
-                                              //         : 290,
-                                              //     height: Responsive.isTablet(
-                                              //             context)
-                                              //         ? 60
-                                              //         : 40,
-                                              //     decoration: BoxDecoration(
-                                              //         borderRadius:
-                                              //             BorderRadius.circular(
-                                              //                 20),
-                                              //         color: Color.fromARGB(
-                                              //             255, 232, 242, 254)),
-                                              //     child:
-                                              //         DropdownButtonHideUnderline(
-                                              //       child: DropdownButton2(
-                                              //         buttonStyleData:
-                                              //             const ButtonStyleData(
-                                              //                 padding:
-                                              //                     const EdgeInsets
-                                              //                             .only(
-                                              //                         right:
-                                              //                             12)),
-                                              //         value: selectedPackage,
-                                              //         hint: Text(
-                                              //           'เลือกแพ็กเกจ',
-                                              //           style: GoogleFonts
-                                              //               .ibmPlexSansThai(
-                                              //                   fontSize: Responsive
-                                              //                           .isTablet(
-                                              //                               context)
-                                              //                       ? 18
-                                              //                       : 14,
-                                              //                   fontWeight:
-                                              //                       FontWeight
-                                              //                           .w500,
-                                              //                   color: Color
-                                              //                       .fromARGB(
-                                              //                           255,
-                                              //                           130,
-                                              //                           130,
-                                              //                           130)),
-                                              //         ),
-                                              //         iconStyleData:
-                                              //             const IconStyleData(
-                                              //           icon: Icon(
-                                              //             Icons
-                                              //                 .arrow_drop_down_outlined,
-                                              //           ),
-                                              //           iconSize: 20,
-                                              //           iconEnabledColor:
-                                              //               Color.fromARGB(255,
-                                              //                   79, 79, 79),
-                                              //           iconDisabledColor:
-                                              //               Color.fromARGB(255,
-                                              //                   79, 79, 79),
-                                              //         ),
-
-                                              //         isExpanded: true,
-                                              //         items: packageItem
-                                              //             .map((option) {
-                                              //           return DropdownMenuItem<
-                                              //               String>(
-                                              //             value: option,
-                                              //             child: Text(
-                                              //               option,
-                                              //               style: GoogleFonts
-                                              //                   .ibmPlexSansThai(
-                                              //                       fontSize:
-                                              //                           16,
-                                              //                       fontWeight:
-                                              //                           FontWeight
-                                              //                               .w500,
-                                              //                       color: Colors
-                                              //                           .black),
-                                              //             ),
-                                              //           );
-                                              //         }).toList(),
-                                              //         dropdownStyleData:
-                                              //             DropdownStyleData(
-                                              //           decoration:
-                                              //               BoxDecoration(
-                                              //             borderRadius:
-                                              //                 BorderRadius
-                                              //                     .circular(5),
-                                              //             color: Colors.white,
-                                              //           ),
-                                              //         ),
-                                              //         // itemHeight: 8,
-                                              //         onChanged: (value) {
-                                              //           setState(() {
-                                              //             selectedPackage =
-                                              //                 value;
-                                              //           });
-                                              //         },
-                                              //       ),
-                                              //     ),
-                                              //   ),
-                                              // ),
-                                              // Padding(
-                                              //   padding: const EdgeInsets.only(
-                                              //       top: 36, left: 25),
-                                              //   child: Container(
-                                              //     width: Responsive.isTablet(
-                                              //             context)
-                                              //         ? 628
-                                              //         : 300,
-                                              //     height: 220,
-                                              //     decoration: BoxDecoration(
-                                              //         color: Colors.white,
-                                              //         borderRadius:
-                                              //             BorderRadius.circular(
-                                              //                 20),
-                                              //         border: Border.all(
-                                              //             color: Color.fromARGB(
-                                              //                 255,
-                                              //                 232,
-                                              //                 242,
-                                              //                 254),
-                                              //             width: 1)),
-                                              //     child: Column(
-                                              //       crossAxisAlignment:
-                                              //           CrossAxisAlignment
-                                              //               .start,
-                                              //       children: [
-                                              //         Padding(
-                                              //           padding:
-                                              //               const EdgeInsets
-                                              //                       .only(
-                                              //                   top: 29,
-                                              //                   left: 15),
-                                              //           child: Text(
-                                              //             "โมดูลผลิตภัณฑ์",
-                                              //             style: GoogleFonts
-                                              //                 .ibmPlexSansThai(
-                                              //                     fontSize: 20,
-                                              //                     fontWeight:
-                                              //                         FontWeight
-                                              //                             .w600,
-                                              //                     color: Colors
-                                              //                         .black),
-                                              //             textAlign:
-                                              //                 TextAlign.start,
-                                              //           ),
-                                              //         ),
-                                              //         Padding(
-                                              //           padding:
-                                              //               const EdgeInsets
-                                              //                       .only(
-                                              //                   top: 18,
-                                              //                   left: 15),
-                                              //           child: Container(
-                                              //             width: 310,
-                                              //             decoration: BoxDecoration(
-                                              //                 color:
-                                              //                     Color.fromARGB(
-                                              //                         255,
-                                              //                         75,
-                                              //                         195,
-                                              //                         211),
-                                              //                 border: Border.all(
-                                              //                     color: Color
-                                              //                         .fromARGB(
-                                              //                             255,
-                                              //                             52,
-                                              //                             145,
-                                              //                             206),
-                                              //                     width: 1)),
-                                              //           ),
-                                              //         ),
-                                              //         Padding(
-                                              //           padding:
-                                              //               const EdgeInsets
-                                              //                       .only(
-                                              //                   top: 18,
-                                              //                   left: 15),
-                                              //           child: Text(
-                                              //             "CMC (Consent Management)\nPDM (Personal Data Management)\nDSR (Data Subject Right Management)",
-                                              //             style: GoogleFonts
-                                              //                 .ibmPlexSansThai(
-                                              //                     fontSize:
-                                              //                         Responsive.isTablet(
-                                              //                                 context)
-                                              //                             ? 18
-                                              //                             : 15,
-                                              //                     fontWeight:
-                                              //                         FontWeight
-                                              //                             .w400,
-                                              //                     color: Color
-                                              //                         .fromARGB(
-                                              //                             255,
-                                              //                             130,
-                                              //                             130,
-                                              //                             130)),
-                                              //             textAlign:
-                                              //                 TextAlign.start,
-                                              //           ),
-                                              //         ),
-                                              //       ],
-                                              //     ),
-                                              //   ),
-                                              // ),
+                                             
                                               Padding(
                                                 padding: const EdgeInsets.only(
                                                   top: 36,
@@ -3040,7 +1713,7 @@ class _Register extends State<Register> {
                                                         ? 66
                                                         : 46,
                                                     child: ElevatedButton(
-                                                      onPressed: () => context.go('/registerdetail'),
+                                                      onPressed: () => context.go('/demodetail'),
                                                       style: ElevatedButton
                                                           .styleFrom(
                                                         backgroundColor:
@@ -3224,7 +1897,7 @@ class _Register extends State<Register> {
                     ),
                     Container(
                       width: 1440,
-                      height: Responsive.isTablet(context) ? 3176 : 2300,
+                      height: Responsive.isTablet(context) ? 3176 : 2000,
                       color: Colors.white,
                       child: Center(
                         child: Column(
@@ -3313,7 +1986,7 @@ class _Register extends State<Register> {
                                                     textAlign: TextAlign.start,
                                                   ),
                                                   TextButton(
-                                                    onPressed: () => context.go('/registerdetail'),
+                                                    onPressed: () => context.go('/demodetail'),
                                                     child: Text(
                                                       "ถัดไป",
                                                       style: GoogleFonts
@@ -3377,7 +2050,7 @@ class _Register extends State<Register> {
                                                           TextAlign.start,
                                                     ),
                                                     TextButton(
-                                                      onPressed: () => context.go('/registerdetail'),
+                                                      onPressed: () => context.go('/demodetail'),
                                                       child: Text(
                                                         "ถัดไป",
                                                         style: GoogleFonts

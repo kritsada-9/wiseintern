@@ -89,7 +89,7 @@ class _FooterState extends State<Footer> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "179/98 Soi Ruammitpattana Junction 8, Tarang, Bangkhen, Bangkok 10220",
+              "4 Central Tower, 12th Floor, Room 1209, Rajdamri Road, Pathumwan, Bangkok",
               style: GoogleFonts.ibmPlexSansThai(
                 fontSize: 16,
                 fontWeight: FontWeight.w400,
@@ -222,7 +222,7 @@ class _FooterState extends State<Footer> {
     var serviceBut = Container(
         height: 160,
         // color: Colors.red,
-        width: 240,
+        width: 230,
         child: ListView.builder(
             shrinkWrap: true,
             itemCount: serviceButton.length,
@@ -566,19 +566,31 @@ class _FooterState extends State<Footer> {
                                         //       ),
                                         //     ),
                                           InkWell( 
-                                              onTap: () => context.go('https://www.facebook.com/thewiseworks'),                                            
+                                            onTap: () {
+                                                  GoRouter.of(context).go('https://www.facebook.com/thewiseworks');
+                                                },
+                                              // onTap: () => context.go('https://www.facebook.com/thewiseworks'),                                            
                                               child: Image.asset(
                                                   "assets/footer/fb.png")),
                                           InkWell(
-                                              onTap: () => context.go('https://www.instagram.com/thewiseworks'), 
+                                            onTap: () {
+                                                GoRouter.of(context).go('https://www.instagram.com/thewiseworks');
+                                                },
+                                              // onTap: () => context.go('https://www.instagram.com/thewiseworks'), 
                                               child: Image.asset(
                                                   "assets/footer/ig.png")),
                                           InkWell(
-                                              onTap: () => context.go('https://www.youtube.com/@thewiseworks8166'),
+                                            onTap: () {
+                                                GoRouter.of(context).go('https://www.youtube.com/@thewiseworks8166');
+                                                },
+                                              // onTap: () => context.go('https://www.youtube.com/@thewiseworks8166'),
                                               child: Image.asset(
                                                   "assets/footer/yt.png")),
                                           InkWell(
-                                              onTap: () => context.go('https://www.tiktok.com/@thewiseworks'),
+                                             onTap: () {
+                                                GoRouter.of(context).go('https://www.tiktok.com/@thewiseworks');
+                                                },
+                                              // onTap: () => context.go('https://www.tiktok.com/@thewiseworks'),
                                               child: Image.asset(
                                                   "assets/footer/tiktok.png")),
                                         ],
@@ -854,7 +866,7 @@ class _FooterState extends State<Footer> {
                                                       width: 213,
                                                       // height: 97,
                                                       child: Text(
-                                                        "The Wise Work Co.,Ltd.\n179/98 Soi Ruammitpattana Junction 8, Tarang, Bangkhen, Bangkok 10220",
+                                                        "The Wise Work Co.,Ltd.\n4 Central Tower, 12th Floor, Room 1209, Rajdamri Road, Pathumwan, Bangkok ",
                                                         style: GoogleFonts
                                                             .ibmPlexSansThai(
                                                                 fontSize: 16,
@@ -1377,7 +1389,7 @@ class _FooterState extends State<Footer> {
                                           width: 301,
                                           height: 72,
                                           child: Text(
-                                            "The Wise Work Co.,Ltd.\n179/98 Soi Ruammitpattana Junction 8, Tarang, Bangkhen, Bangkok 10220",
+                                            "The Wise Work Co.,Ltd.\n4 Central Tower, 12th Floor, Room 1209, Rajdamri Road, Pathumwan, Bangkok",
                                             style: GoogleFonts.ibmPlexSansThai(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.w400,

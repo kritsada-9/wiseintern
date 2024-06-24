@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:go_router/go_router.dart';
+import 'package:wiseintern/home/header_video.dart';
 
 class StoryPage extends StatefulWidget {
   @override
@@ -63,6 +64,8 @@ class _DestinationCarouselState extends State<StoryPage> {
       ),
     ),
   ];
+
+
   List<Widget> min_images = [
     Container(
       decoration: BoxDecoration(
@@ -105,8 +108,13 @@ class _DestinationCarouselState extends State<StoryPage> {
       ),
     ),
   ];
+
+
+  
   final controller =
       PageController(viewportFraction: 0.8, keepPage: true, initialPage: 0);
+
+  final GlobalKey _creatingSuccessKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -116,6 +124,7 @@ class _DestinationCarouselState extends State<StoryPage> {
       "เชี่ยวชาญงานพัฒนาโปรแกรมระบบด้านความมั่นคงปลอดภัยสารสนเทศ",
       "เชี่ยวชาญงานพัฒนาโปรแกรมตามกฎหมาย กฎระเบียบ และมาตรฐานสากล",
     ];
+
     // var groupofpic = Container(
     //   height: 380,
     //   width: 720,
@@ -139,6 +148,30 @@ class _DestinationCarouselState extends State<StoryPage> {
     //     ],
     //   ),
     // );
+    // Container _buildBgHeader(BuildContext context) {
+    //     return Container(
+    //       width: MediaQuery.of(context).size.width,
+    //       height: MediaQuery.of(context).size.width < 800 ? 400 : 500,
+    //       child: ShaderMask(
+    //         blendMode: BlendMode.dstIn,
+    //         shaderCallback: (Rect bounds) {
+    //           return const LinearGradient(
+    //             begin: Alignment.centerRight,
+    //             end: Alignment.centerLeft,
+    //             colors: [
+    //               Color.fromARGB(255, 99, 99, 99),
+    //               Colors.transparent
+    //             ],
+    //             stops: [5, 5],
+    //           ).createShader(bounds);
+    //         },
+    //         child: Image.asset(
+    //           'assets/images/HD-Home03.gif',
+    //           fit: BoxFit.cover,
+    //         ),
+    //       ),
+    //     );
+    //   }
 
     var title = Container(
       color: Color.fromARGB(0, 0, 187, 212),
@@ -244,112 +277,130 @@ class _DestinationCarouselState extends State<StoryPage> {
                   ? Color.fromARGB(255, 232, 242, 254)
                   : Color.fromARGB(255, 5, 45, 97),
               child: Column(
-                children: [
-                  // SizedBox(height: Responsive.isDesktop(context) ? 83 : 0),
-                  Stack(
-                    children: [
-                      Column(
-                        children: [
-                          CarouselSlider(
-                            items: !Responsive.isMobile(context)
-                                ? med_images
-                                : min_images,
-                            options: CarouselOptions(
-                                scrollPhysics: PageScrollPhysics(),
-                                //  NeverScrollableScrollPhysics(),
-                                // enlargeCenterPage: true,
-                                aspectRatio: Responsive.isDesktop(context)
-                                    ? 1440 / 1039
-                                    : Responsive.isTablet(context)
-                                        ? 768 / 554
-                                        : 375 / 538,
-                                autoPlay: true,
-                                viewportFraction: 1,
-                                onPageChanged: (index, reason) {
-                                  setState(() {
-                                    _current = index;
-                                  });
-                                }),
-                            // carouselController: _controller,
-                          ),
-                          SizedBox(
-                              height: Responsive.isDesktop(context) ? 0 : 25),
-                        ],
-                      ),
-                      Positioned(
-                        bottom: Responsive.isDesktop(context) ? 201 : 0,
-                        left: Responsive.isDesktop(context)
-                            ? 598
-                            : (MediaQuery.of(context).size.width - 222) / 2,
-                        right: Responsive.isDesktop(context)
-                            ? 598
-                            : (MediaQuery.of(context).size.width - 222) / 2,
-                        child: SizedBox(
-                          width: Responsive.isDesktop(context) ? 243 : 222,
-                          height: 50,
-                          child: ElevatedButton(
-                              onPressed: () => context.go('/demo'),
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor:
-                                    Color.fromRGBO(75, 195, 211, 1),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(44.0),
-                                ),
-                              ),
-                              child: Text(
-                                "Get A free Demo",
-                                style: GoogleFonts.ibmPlexSansThai(
-                                    fontSize:
-                                        Responsive.isDesktop(context) ? 24 : 20,
-                                    fontWeight: FontWeight.w500),
-                              )),
-                        ),
-                      ),
-                      Positioned(
-                        bottom: Responsive.isDesktop(context)
-                            ? 61
-                            : Responsive.isTablet(context)
-                                ? 100
-                                : 96,
-                        left: Responsive.isDesktop(context)
-                            ? 675
-                            : (MediaQuery.of(context).size.width / 2) - 44,
-                        right: Responsive.isDesktop(context)
-                            ? 675
-                            : (MediaQuery.of(context).size.width / 2) - 44,
-                        child: Container(
-                          child: AnimatedSmoothIndicator(
-                            activeIndex: _current,
-                            count: 5,
-                            effect: CustomizableEffect(
-                              activeDotDecoration: DotDecoration(
-                                width: 16,
-                                height: 6,
-                                color:
-                                    //  Responsive.isDesktop(context)
-                                    //     ? Color.fromARGB(255, 0, 0, 0)
-                                    //     :
-                                    Colors.white,
-                                borderRadius: BorderRadius.circular(50),
-                              ),
-                              dotDecoration: DotDecoration(
-                                width: 10,
-                                height: 4,
-                                color:
-                                    //  Responsive.isDesktop(context)
-                                    //     ? Colors.grey
-                                    //     :
-                                    Color.fromARGB(40, 255, 255, 255),
-                                borderRadius: BorderRadius.circular(50),
-                                verticalOffset: 0,
-                              ),
-                              spacing: 6.0,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                children: [                 
+                    Stack(
+                      // children: [
+                      //   HeaderHome(),
+                      // ],
+                      // children: [
+                      //   // _buildBgHeader(context),  
+                      //   HeaderHome(),           
+                      //   Positioned(
+                      //     bottom: 0,
+                      //     right: 0,
+                      //     child: Column(
+                      //       children: [                              
+                      //       ],
+                      //     ),
+                      //   ),
+                      // ],
+                    ),
+                    // CreatingSuccess(key: _creatingSuccessKey),
+                  SizedBox(height: Responsive.isDesktop(context) ? 83 : 0),
+                  // Stack(
+                  //   children: [
+                  //     Column(
+                  //       children: [
+                  //         CarouselSlider(
+                  //           items: !Responsive.isMobile(context)
+                  //               ? med_images
+                  //               : min_images,
+                  //           options: CarouselOptions(
+                  //               scrollPhysics: PageScrollPhysics(),
+                  //               //  NeverScrollableScrollPhysics(),
+                  //               // enlargeCenterPage: true,
+                  //               aspectRatio: Responsive.isDesktop(context)
+                  //                   ? 1440 / 1039
+                  //                   : Responsive.isTablet(context)
+                  //                       ? 768 / 554
+                  //                       : 375 / 538,
+                  //               autoPlay: true,
+                  //               viewportFraction: 1,
+                  //               onPageChanged: (index, reason) {
+                  //                 setState(() {
+                  //                   _current = index;
+                  //                 });
+                  //               }),
+                  //           // carouselController: _controller,
+                  //         ),
+                  //         SizedBox(
+                  //             height: Responsive.isDesktop(context) ? 0 : 25),
+                  //       ],
+                  //     ),
+                  //     Positioned(
+                  //       bottom: Responsive.isDesktop(context) ? 201 : 0,
+                  //       left: Responsive.isDesktop(context)
+                  //           ? 598
+                  //           : (MediaQuery.of(context).size.width - 222) / 2,
+                  //       right: Responsive.isDesktop(context)
+                  //           ? 598
+                  //           : (MediaQuery.of(context).size.width - 222) / 2,
+                  //       child: SizedBox(
+                  //         width: Responsive.isDesktop(context) ? 243 : 222,
+                  //         height: 50,
+                  //         child: ElevatedButton(
+                  //             onPressed: () => context.go('/demo'),
+                  //             style: ElevatedButton.styleFrom(
+                  //               backgroundColor:
+                  //                   Color.fromRGBO(75, 195, 211, 1),
+                  //               shape: RoundedRectangleBorder(
+                  //                 borderRadius: BorderRadius.circular(44.0),
+                  //               ),
+                  //             ),
+                  //             child: Text(
+                  //               "Get A free Demo",
+                  //               style: GoogleFonts.ibmPlexSansThai(
+                  //                   fontSize:
+                  //                       Responsive.isDesktop(context) ? 24 : 20,
+                  //                   fontWeight: FontWeight.w500),
+                  //             )),
+                  //       ),
+                  //     ),
+                  //     Positioned(
+                  //       bottom: Responsive.isDesktop(context)
+                  //           ? 61
+                  //           : Responsive.isTablet(context)
+                  //               ? 100
+                  //               : 96,
+                  //       left: Responsive.isDesktop(context)
+                  //           ? 675
+                  //           : (MediaQuery.of(context).size.width / 2) - 44,
+                  //       right: Responsive.isDesktop(context)
+                  //           ? 675
+                  //           : (MediaQuery.of(context).size.width / 2) - 44,
+                  //       child: Container(
+                  //         child: AnimatedSmoothIndicator(
+                  //           activeIndex: _current,
+                  //           count: 5,
+                  //           effect: CustomizableEffect(
+                  //             activeDotDecoration: DotDecoration(
+                  //               width: 16,
+                  //               height: 6,
+                  //               color:
+                  //                   //  Responsive.isDesktop(context)
+                  //                   //     ? Color.fromARGB(255, 0, 0, 0)
+                  //                   //     :
+                  //                   Colors.white,
+                  //               borderRadius: BorderRadius.circular(50),
+                  //             ),
+                  //             dotDecoration: DotDecoration(
+                  //               width: 10,
+                  //               height: 4,
+                  //               color:
+                  //                   //  Responsive.isDesktop(context)
+                  //                   //     ? Colors.grey
+                  //                   //     :
+                  //                   Color.fromARGB(40, 255, 255, 255),
+                  //               borderRadius: BorderRadius.circular(50),
+                  //               verticalOffset: 0,
+                  //             ),
+                  //             spacing: 6.0,
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
                 ],
               ),
             ),
@@ -473,9 +524,12 @@ class _DestinationCarouselState extends State<StoryPage> {
                 ],
               ),
             ),
+            
+            
           ],
         ),
       ),
+      
     );
   }
 }

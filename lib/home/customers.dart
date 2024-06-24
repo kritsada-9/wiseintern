@@ -8,6 +8,7 @@ import 'package:wiseintern/responsive.dart';
 // import 'package:carousel_indicator/carousel_indicator.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 // import 'package:wiseintern/model/customer_carousel.dart';
+// import 'package:wiseintern/model/customer_logo.dart';
 
 class CustomerModel {
   final String imageUrl;
@@ -53,6 +54,12 @@ class _CustomerState extends State<Customer> {
         "โรงพยาบาล ป.แพทย์\nให้บริการเกี่ยวกับเทคโนโลยีบล็อกเชน "),
     RealStory("assets/customer/Permier_Tecnology.png", "Permier Tecnology",
         "บริษัท พรีเมียร์ เทคโนโลยี จำกัด (มหาชน)\nให้บริการเกี่ยวกับเทคโนโลยีบล็อกเชน "),
+    RealStory("assets/customer/MTS.png", "มหาวิทยาลัยเทคโนโลยีสุรนารี",
+        "มหาวิทยาลัยเทคโนโลยีสุรนารี\nสถาบันการศึกษามหาวิทยาลัยเทคโนโลยีสุรนารี"),  
+    RealStory("assets/customer/PKS.png", "Pks Phuket Square",
+        "บริษัท ภูเก็ตสแควร์ จำกัด\nให้บริการเกี่ยวกับการค้าปลีก"),
+    RealStory("assets/customer/J&T.png", "J&T Express",
+        "บริษัท โกลบอล เจท เอ็กซ์เพรส (ไทยแลนด์) จำกัด\nให้บริการเกี่ยวกับการรับส่งวัสดุ พัสดุ วัตถุต่างๆ รวมทั้งให้บริการการเก็บรักษาและระบบติดตามของ"),             
   ];
 
   @override

@@ -1263,7 +1263,7 @@ class GAMSfeaturesPage extends StatelessWidget {
                                                 BorderRadius.circular(30.0)),
                                       ),
                                       child: Text(
-                                        'Roquestb Demo',
+                                        'Request Demo',
                                         style: GoogleFonts.ibmPlexSansThai(
                                             fontSize: 20,
                                             fontWeight: FontWeight.w600,
@@ -2058,7 +2058,7 @@ class GAMSfeaturesPage extends StatelessWidget {
                                                                           30.0)),
                                                     ),
                                                     child: Text(
-                                                      'Roquestb Demo',
+                                                      'Request Demo',
                                                       style: GoogleFonts
                                                           .ibmPlexSansThai(
                                                               fontSize: 20,
@@ -2902,7 +2902,7 @@ class GAMSfeaturesPage extends StatelessWidget {
                                                                           30.0)),
                                                     ),
                                                     child: Text(
-                                                      'Roquestb Demo',
+                                                      'Request Demo',
                                                       style: GoogleFonts
                                                           .ibmPlexSansThai(
                                                               fontSize: 16,

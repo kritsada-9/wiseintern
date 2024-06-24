@@ -135,19 +135,7 @@ class _NavigationBarState extends State<NavBar> {
                               ? Colors.white
                               : Color.fromARGB(255, 52, 144, 206),
                         ),
-                      )),
-                       DropdownMenuItem(
-                      value: 'Our Products',
-                      onTap: () => context.go('/package'),
-                      child: Text(
-                        'Our Products',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: _selected
-                              ? Colors.white
-                              : Color.fromARGB(255, 52, 144, 206),
-                        ),
-                      )),
+                      )),                     
                 ],
                 value: AboutValue,
                 onChanged: (value) {
@@ -173,7 +161,7 @@ class _NavigationBarState extends State<NavBar> {
                 ),
                 dropdownStyleData: DropdownStyleData(
                     maxHeight: 190,
-                    width: 150,
+                    width: 180,
                     padding: null,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5),
@@ -216,6 +204,18 @@ class _NavigationBarState extends State<NavBar> {
                               : Color.fromARGB(255, 52, 144, 206),
                         ),
                       )),
+                       DropdownMenuItem(
+                      value: 'pdpa compliance',
+                      onTap: () => context.go('/package'),
+                      child: Text(
+                        'PDPA Compliance Kit Package',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: _selected
+                              ? Colors.white
+                              : Color.fromARGB(255, 52, 144, 206),
+                        ),
+                      )),
                   DropdownMenuItem(
                       value: 'governance',
                       onTap: () => context.go('/gams'),
@@ -228,18 +228,18 @@ class _NavigationBarState extends State<NavBar> {
                               : Color.fromARGB(255, 52, 144, 206),
                         ),
                       )),
-                  // DropdownMenuItem(
-                  //     value: 'request',
-                  //     onTap: () => context.go('/demo'),
-                  //     child: Text(
-                  //       'Request Demo',
-                  //       style: TextStyle(
-                  //         fontSize: 16,
-                  //         color: _selected
-                  //             ? Colors.white
-                  //             : Color.fromARGB(255, 52, 144, 206),
-                  //       ),
-                  //     )),
+                  DropdownMenuItem(
+                      value: 'request',
+                      onTap: () => context.go('/demo'),
+                      child: Text(
+                        'Request Demo',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: _selected
+                              ? Colors.white
+                              : Color.fromARGB(255, 52, 144, 206),
+                        ),
+                      )),
                 ],
                 value: ServicesValue,
                 onChanged: (value) {
@@ -304,29 +304,29 @@ class _NavigationBarState extends State<NavBar> {
               ),
               onPressed: () => context.go('/contact'),
             ),
-            // SizedBox(
-            //   width: 42,
-            // ),
-            // SizedBox(
-            //   width: 195,
-            //   height: 50,
-            //   child: ElevatedButton(
-            //     onPressed: () => context.go('/demo'),
-            //     style: ElevatedButton.styleFrom(
-            //       backgroundColor: Color.fromARGB(255, 232, 242, 254),
-            //       side: BorderSide(width: 3, color: Colors.blue),
-            //       shape: RoundedRectangleBorder(
-            //           borderRadius: BorderRadius.circular(30.0)),
-            //     ),
-            //     child: Text(
-            //       'ทดลองใช้ฟรี',
-            //       style: GoogleFonts.ibmPlexSansThai(
-            //           color: Color.fromARGB(255, 57, 128, 237),
-            //           fontSize: 20,
-            //           fontWeight: FontWeight.w600),
-            //     ),
-            //   ),
-            // ),
+            SizedBox(
+              width: 42,
+            ),
+            SizedBox(
+              width: 160,
+              height: 40,
+              child: ElevatedButton(
+                onPressed: () => context.go('/demo'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 232, 242, 254),
+                  side: BorderSide(width: 3, color: Colors.blue),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0)),
+                ),
+                child: Text(
+                  'ทดลองใช้ฟรี',
+                  style: GoogleFonts.ibmPlexSansThai(
+                      color: Color.fromARGB(255, 57, 128, 237),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600),
+                ),
+              ),
+            ),
           ],
         ),
       ),
