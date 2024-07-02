@@ -870,7 +870,7 @@ class _Address extends State<Address> {
                                             textAlign: TextAlign.start,
                                           ),
                                           Text(
-                                            "4 Central Tower, 12th Floor, Room 1209, Rajdamri Road, Pathumwan, Bangkok",
+                                            "4, 4/5 Central Tower, 12th Floor, Room 1209, Rajdamri Road, Pathumwan, Pathumwan, Bangkok 10330",
                                             style: GoogleFonts.ibmPlexSansThai(
                                               fontSize: 16,
                                               fontWeight: FontWeight.w400,

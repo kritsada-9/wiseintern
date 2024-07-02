@@ -65,7 +65,7 @@ class _FooterState extends State<Footer> {
               "assets/footer/mail.png",
             ),
             SizedBox(
-              height: Responsive.isDesktop(context) ? 20 : 10,
+              height: Responsive.isDesktop(context) ? 40 : 10,
             ),
             Image.asset(
               "assets/footer/tel.png",
@@ -89,7 +89,7 @@ class _FooterState extends State<Footer> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "4 Central Tower, 12th Floor, Room 1209, Rajdamri Road, Pathumwan, Bangkok",
+              "4, 4/5 Central Tower, 12th Floor, Room 1209, Rajdamri Road, Pathumwan, Pathumwan, Bangkok 10330",
               style: GoogleFonts.ibmPlexSansThai(
                 fontSize: 16,
                 fontWeight: FontWeight.w400,
