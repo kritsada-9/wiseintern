@@ -48,7 +48,7 @@ class _FooterState extends State<Footer> {
     var listImg = Container(
         // color: Color.fromARGB(255, 195, 152, 22),
         height: Responsive.isDesktop(context)
-            ? 150
+            ? 160
             : Responsive.isTablet(context)
                 ? 100
                 : 50,
@@ -59,13 +59,13 @@ class _FooterState extends State<Footer> {
               "assets/footer/location.png",
             ),
             SizedBox(
-              height: Responsive.isDesktop(context) ? 35 : 15,
+              height: Responsive.isDesktop(context) ? 60 : 15,
             ),
             Image.asset(
               "assets/footer/mail.png",
             ),
             SizedBox(
-              height: Responsive.isDesktop(context) ? 40 : 10,
+              height: Responsive.isDesktop(context) ? 18 : 10,
             ),
             Image.asset(
               "assets/footer/tel.png",
