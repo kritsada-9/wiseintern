@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:wiseintern/responsive.dart';
 // import 'package:flutter/services.dart';
 // import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -212,7 +213,7 @@ class _privacypolicyState extends State<privacypolicy> {
                                       padding: const EdgeInsets.only(left: 100),
                                       child: Container(
                                           width: 1200, child: _buildPanel()),
-                                    ),                                   
+                                    ),
                                   ],
                                 )
                               ],
@@ -480,7 +481,7 @@ class _privacypolicyState extends State<privacypolicy> {
                                                           255, 33, 31, 37)),
                                               textAlign: TextAlign.left,
                                             ),
-                                          ),                             
+                                          ),
                                           Padding(
                                             padding: const EdgeInsets.only(
                                               top: 0,
@@ -570,7 +571,7 @@ class _privacypolicyState extends State<privacypolicy> {
                                                       child: Padding(
                                                         padding:
                                                             const EdgeInsets
-                                                                    .only(
+                                                                .only(
                                                                 top: 25,
                                                                 left: 6,
                                                                 right: 6,
@@ -720,7 +721,7 @@ class _privacypolicyState extends State<privacypolicy> {
                                                       child: Padding(
                                                         padding:
                                                             const EdgeInsets
-                                                                    .only(
+                                                                .only(
                                                                 top: 15,
                                                                 left: 6,
                                                                 right: 22,
@@ -947,9 +948,7 @@ class _privacypolicyState extends State<privacypolicy> {
                                   ? -25
                                   : -25),
                       child: Icon(
-                        isExpanded
-                            ? Icons.keyboard_arrow_up
-                            : Icons.expand_more_outlined,
+                        isExpanded ? Ionicons.caret_up : Ionicons.caret_down,
                         color: isExpanded
                             ? Color.fromARGB(255, 75, 195, 211)
                             : Color.fromARGB(255, 255, 255, 255),

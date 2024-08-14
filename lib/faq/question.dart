@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:wiseintern/responsive.dart';
 import 'package:wiseintern/home/faq.dart';
 
@@ -466,9 +467,7 @@ class _QuestionsState extends State<Questions> {
                                   ? -30
                                   : -33),
                       child: Icon(
-                        isExpanded
-                            ? Icons.keyboard_arrow_up
-                            : Icons.expand_more_outlined,
+                        isExpanded ? Ionicons.caret_up : Ionicons.caret_down,
                         color: isExpanded
                             ? Color.fromARGB(255, 75, 195, 211)
                             : Colors.white,

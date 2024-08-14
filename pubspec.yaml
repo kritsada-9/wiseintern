@@ -1,387 +1,315 @@
 name: wiseintern
 description: A new Flutter project.
 
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none"
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# In Windows, build-name is used as the major, minor, and patch parts
-# of the product and file versions while build-number is used as the build suffix.
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.6 <3.0.0'
+  sdk: ">=2.18.6 <3.0.0"
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
-  # flutter_swiper : ^1.1.6
   flutter:
     sdk: flutter
   smooth_page_indicator:
   go_router: ^6.2.0
   get: ^4.6.1
-  
+
   loop_page_view: ^1.0.11
   google_maps_flutter: ^2.2.4
-  # flutter_carousel_slider: ^2.3.0
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   fluttertoast: ^8.1.2
   url_launcher: ^6.1.10
-  
+
   google_fonts: any
-  carousel_slider: any
-  dropdown_button2: any
-  dotted_line: any
-  hovering: any
-  meta_seo: ^3.0.9
-dev_dependencies:
-  flutter_staggered_grid_view: ^0.6.2
-  hovering: ^1.0.4 
-  flutter_test:
-    sdk: flutter
+  carousel_slider: ^4.2.1
   dropdown_button2: ^2.3.9
   dotted_line: ^3.1.0
-  carousel_slider: ^4.2.1
+  hovering: ^1.0.4
+  meta_seo: ^3.0.9
+  flutter_staggered_grid_view: ^0.6.2
+  ionicons: ^0.2.2
 
-  # smooth_page_indicator: ^1.0.0+2
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
   flutter_lints: ^2.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
 flutter:
   assets:
-  - assets/features/audit.png
-  - assets/features/breach.png
-  - assets/features/consent.png
-  - assets/features/cookie.png
-  - assets/features/data.png
-  - assets/features/discovery.png
-  - assets/features/executive.png
-  - assets/features/folder.png
-  - assets/features/legi.png
-  - assets/features/policy.png
-  - assets/features/risk.png
-  - assets/features/system.png
-  - assets/logo.png
-  
-  - assets/features/pdcard.png
-  - assets/features/dpiacard.png
-  - assets/features/cookiecard.png
-  - assets/features/auditcard.png
-  - assets/features/discoverycard.png
-  - assets/features/breachcard.png
-  - assets/features/systemcard.png
-  - assets/features/executivecard.png
-  - assets/features/legicard.png
-  - assets/features/datacard.png
-  - assets/features/policycard.png
+    - assets/features/audit.png
+    - assets/features/breach.png
+    - assets/features/consent.png
+    - assets/features/cookie.png
+    - assets/features/data.png
+    - assets/features/discovery.png
+    - assets/features/executive.png
+    - assets/features/folder.png
+    - assets/features/legi.png
+    - assets/features/policy.png
+    - assets/features/risk.png
+    - assets/features/system.png
+    - assets/logo.png
 
-  - assets/features/pd00.png
-  - assets/features/pd01.png
-  - assets/features/pd02.png
-  - assets/features/pd03.png
-  
-  - assets/features/DPIA01.png
-  - assets/features/DPIA02.png
-  - assets/features/DPIA03.png
-  - assets/features/DPIA04.png
-  - assets/features/DPIA02-1.png
+    - assets/features/pdcard.png
+    - assets/features/dpiacard.png
+    - assets/features/cookiecard.png
+    - assets/features/auditcard.png
+    - assets/features/discoverycard.png
+    - assets/features/breachcard.png
+    - assets/features/systemcard.png
+    - assets/features/executivecard.png
+    - assets/features/legicard.png
+    - assets/features/datacard.png
+    - assets/features/policycard.png
 
-  - assets/features/DSR011.png
-  - assets/features/DSR02.png
-  - assets/features/DSR03.png
-  - assets/features/DSR04.png
-  - assets/features/DSR05.png
+    - assets/features/pd00.png
+    - assets/features/pd01.png
+    - assets/features/pd02.png
+    - assets/features/pd03.png
 
-  - assets/features/DB01.png
-  - assets/features/DB02.png
-  - assets/features/DB03.png
-  - assets/features/DB04.png
+    - assets/features/DPIA01.png
+    - assets/features/DPIA02.png
+    - assets/features/DPIA03.png
+    - assets/features/DPIA04.png
+    - assets/features/DPIA02-1.png
 
-  - assets/features/AD01.png
-  - assets/features/AD02.png
-  - assets/features/AD03.png
-  - assets/features/AD04.png
+    - assets/features/DSR011.png
+    - assets/features/DSR02.png
+    - assets/features/DSR03.png
+    - assets/features/DSR04.png
+    - assets/features/DSR05.png
 
-  - assets/features/PAN01.png
-  - assets/features/PAN02.png
+    - assets/features/DB01.png
+    - assets/features/DB02.png
+    - assets/features/DB03.png
+    - assets/features/DB04.png
 
-  - assets/features/DD01.png
-  - assets/features/DD021.png
-  - assets/features/DD03.png
+    - assets/features/AD01.png
+    - assets/features/AD02.png
+    - assets/features/AD03.png
+    - assets/features/AD04.png
 
-  - assets/features/ES01.png
-  - assets/features/ES02.png
-  - assets/features/ES03.png
-  - assets/features/ES04.png
+    - assets/features/PAN01.png
+    - assets/features/PAN02.png
 
-  - assets/features/LIA01.png
-  - assets/features/LIA02.png
-  - assets/features/LIA03.png
-  - assets/features/LIA04.png
+    - assets/features/DD01.png
+    - assets/features/DD021.png
+    - assets/features/DD03.png
 
-  - assets/features/ST03.png
-  - assets/features/ST011.png
-  - assets/features/ST02.png
-  - assets/features/ST041.png
-  
+    - assets/features/ES01.png
+    - assets/features/ES02.png
+    - assets/features/ES03.png
+    - assets/features/ES04.png
 
-  - assets/features/CS01.png
-  - assets/features/CS02.png
-  - assets/features/CS031.png
+    - assets/features/LIA01.png
+    - assets/features/LIA02.png
+    - assets/features/LIA03.png
+    - assets/features/LIA04.png
 
-  - assets/features/blue-check.png
-  - assets/features/white-check.png
+    - assets/features/ST03.png
+    - assets/features/ST011.png
+    - assets/features/ST02.png
+    - assets/features/ST041.png
 
-  - assets/features/GAMS-SDCD01.png
-  - assets/features/GAMS-RMS02.png
-  - assets/features/GAMS-Aesset03.png
-  - assets/features/GAMS-AMS04.png
-  - assets/features/GAMS-KMS05.png
-  - assets/features/GAMS-ESS06.png
-  
-  - assets/packages/check.png
-  - assets/packages/cloud.png
-  - assets/packages/clouds.png
-  - assets/packages/rainbow_cloud.png
-  - assets/packages/record.png
-  - assets/packages/lock.png
-  - assets/packages/cross.png
+    - assets/features/CS01.png
+    - assets/features/CS02.png
+    - assets/features/CS031.png
 
-  - assets/customer/
-  - assets/customer/nia.png
-  - assets/customer/Nikhom.png
-  - assets/customer/Nutt.png
-  - assets/customer/viriya.png
-  - assets/customer/viriya-logo.png
-  - assets/customer/royalTH.png
-  - assets/customer/bitkub.png
-  - assets/customer/black-check.png
-  - assets/customer/bdms.png
-  - assets/customer/boonrawd.png
-  - assets/customer/brr.png
-  - assets/customer/pat.png
-  - assets/customer/process.png
-  - assets/customer/advice.png
-  - assets/customer/advice-logo.png
-  - assets/customer/Amorn.png
-  - assets/customer/Anan.png
-  - assets/customer/Ann.png
-  - assets/customer/ichitan.png
-  - assets/customer/singha.png
-  - assets/customer/click.png
-  - assets/customer/comma.png
-  - assets/customer/p-pat.png
-  - assets/customer/Pachai.png
-  - assets/customer/rise-consulting.png
-  - assets/customer/meng.png
-  - assets/customer/mobiles.png
-  - assets/customer/singha-beer.png
-  - assets/customer/daiichi.png
-  - assets/customer/kdn.png
-  - assets/customer/national-economic.png
-  - assets/customer/intrarat.png
-  - assets/customer/Jirayuth.png
-  - assets/customer/singha-park.png
-  - assets/customer/muzik.png
-  - assets/customer/santafe.png
-  - assets/customer/ku.png
-  - assets/customer/sbp.png
-  - assets/customer/win.png
-  - assets/customer/team.png
-  - assets/customer/kyocera.png
-  - assets/customer/laptop.png
-  - assets/customer/lotus.png
-  - assets/customer/tvo.png
-  - assets/customer/tvo-th.png
-  - assets/customer/top.png
-  - assets/customer/right.png
-  - assets/customer/union.png
-  - assets/customer/notebook.png
-  - assets/customer/Iphone.png
-  - assets/customer/Ipad.png
-  - assets/customer/Permier_Tecnology.png
+    - assets/features/blue-check.png
+    - assets/features/white-check.png
 
-  - assets/story/storypic.png
-  - assets/story/storybg.png
-  - assets/story/record.png
+    - assets/features/GAMS-SDCD01.png
+    - assets/features/GAMS-RMS02.png
+    - assets/features/GAMS-Aesset03.png
+    - assets/features/GAMS-AMS04.png
+    - assets/features/GAMS-KMS05.png
+    - assets/features/GAMS-ESS06.png
 
-  - assets/faq/faq-pic.png
-  - assets/faq/faq-bg.png
-  - assets/faq/qa.png
-  - assets/faq/Union.png
-  - assets/faq/half.png
+    - assets/packages/check.png
+    - assets/packages/cloud.png
+    - assets/packages/clouds.png
+    - assets/packages/rainbow_cloud.png
+    - assets/packages/record.png
+    - assets/packages/lock.png
+    - assets/packages/cross.png
 
-  - assets/featuresData.json
-  - assets/packagesData.json
-  - assets/featuresGAMS.json
+    - assets/customer/
+    - assets/customer/nia.png
+    - assets/customer/Nikhom.png
+    - assets/customer/Nutt.png
+    - assets/customer/viriya.png
+    - assets/customer/viriya-logo.png
+    - assets/customer/royalTH.png
+    - assets/customer/bitkub.png
+    - assets/customer/black-check.png
+    - assets/customer/bdms.png
+    - assets/customer/boonrawd.png
+    - assets/customer/brr.png
+    - assets/customer/pat.png
+    - assets/customer/process.png
+    - assets/customer/advice.png
+    - assets/customer/advice-logo.png
+    - assets/customer/Amorn.png
+    - assets/customer/Anan.png
+    - assets/customer/Ann.png
+    - assets/customer/ichitan.png
+    - assets/customer/singha.png
+    - assets/customer/click.png
+    - assets/customer/comma.png
+    - assets/customer/p-pat.png
+    - assets/customer/Pachai.png
+    - assets/customer/rise-consulting.png
+    - assets/customer/meng.png
+    - assets/customer/mobiles.png
+    - assets/customer/singha-beer.png
+    - assets/customer/daiichi.png
+    - assets/customer/kdn.png
+    - assets/customer/national-economic.png
+    - assets/customer/intrarat.png
+    - assets/customer/Jirayuth.png
+    - assets/customer/singha-park.png
+    - assets/customer/muzik.png
+    - assets/customer/santafe.png
+    - assets/customer/ku.png
+    - assets/customer/sbp.png
+    - assets/customer/win.png
+    - assets/customer/team.png
+    - assets/customer/kyocera.png
+    - assets/customer/laptop.png
+    - assets/customer/lotus.png
+    - assets/customer/tvo.png
+    - assets/customer/tvo-th.png
+    - assets/customer/top.png
+    - assets/customer/right.png
+    - assets/customer/union.png
+    - assets/customer/notebook.png
+    - assets/customer/Iphone.png
+    - assets/customer/Ipad.png
+    - assets/customer/Permier_Tecnology.png
 
-  - assets/footer/logo.png
-  - assets/footer/fb.png
-  - assets/footer/ig.png
-  - assets/footer/yt.png
-  - assets/footer/tiktok.png
-  - assets/footer/location.png
-  - assets/footer/mail.png
-  - assets/footer/tel.png
-  - assets/footer/email-icon.png
-  - assets/footer/call-icon.png
-  - assets/footer/send.png
+    - assets/story/storypic.png
+    - assets/story/storybg.png
+    - assets/story/record.png
 
-  - assets/pdpa/pdpa.png
-  - assets/pdpa/check.png
-  - assets/pdpa/mobile.png
-  - assets/pdpa/phone.png
+    - assets/faq/faq-pic.png
+    - assets/faq/faq-bg.png
+    - assets/faq/qa.png
+    - assets/faq/Union.png
+    - assets/faq/half.png
 
-  - assets/contact/phone.png
-  - assets/contact/mail.png
-  - assets/contact/facebook.png
-  - assets/contact/instagram.png
-  - assets/contact/youtube.png
-  - assets/contact/tiktok.png
-  - assets/contact/map.png
-  - assets/contact/route.png
-  - assets/contact/plane.png
+    - assets/featuresData.json
+    - assets/packagesData.json
+    - assets/featuresGAMS.json
 
+    - assets/footer/logo.png
+    - assets/footer/fb.png
+    - assets/footer/ig.png
+    - assets/footer/yt.png
+    - assets/footer/tiktok.png
+    - assets/footer/location.png
+    - assets/footer/mail.png
+    - assets/footer/tel.png
+    - assets/footer/email-icon.png
+    - assets/footer/call-icon.png
+    - assets/footer/send.png
 
-  - assets/carousel/crs.png
-  - assets/carousel/med_crs2.png
-  - assets/carousel/med_crs3.png
-  - assets/carousel/med_crs.png
-  - assets/carousel/min_crs.png
-  - assets/carousel/med_crs4.png
-  - assets/carousel/med_crs5.png
+    - assets/pdpa/pdpa.png
+    - assets/pdpa/check.png
+    - assets/pdpa/mobile.png
+    - assets/pdpa/phone.png
 
-  - assets/about/who/computer.png
-  - assets/about/who/diagram.png
-  - assets/about/who/comp.png
-  - assets/about/who/right.png
-  - assets/about/who/top.png
-  - assets/about/who/union.png
+    - assets/contact/phone.png
+    - assets/contact/mail.png
+    - assets/contact/facebook.png
+    - assets/contact/instagram.png
+    - assets/contact/youtube.png
+    - assets/contact/tiktok.png
+    - assets/contact/map.png
+    - assets/contact/route.png
+    - assets/contact/plane.png
 
-  - assets/demo/dot.png
-  - assets/demo/colab.png
-  - assets/demo/dashboard.png
-  - assets/demo/goal.png
-  - assets/demo/google.png
-  - assets/demo/pic1.png
-  - assets/demo/pic2.png
-  - assets/demo/pic3.png
-  - assets/demo/team.png
+    - assets/carousel/crs.png
+    - assets/carousel/med_crs2.png
+    - assets/carousel/med_crs3.png
+    - assets/carousel/med_crs.png
+    - assets/carousel/min_crs.png
+    - assets/carousel/med_crs4.png
+    - assets/carousel/med_crs5.png
 
-  - assets/about/why/wisework.png
-  - assets/about/why/successful.png
-  - assets/about/why/check.png
+    - assets/about/who/computer.png
+    - assets/about/who/diagram.png
+    - assets/about/who/comp.png
+    - assets/about/who/right.png
+    - assets/about/who/top.png
+    - assets/about/who/union.png
 
-  - assets/about/banner/banner.png
-  - assets/about/banner/bg-banner.png
-  - assets/about/banner/mobile.png
-  - assets/about/banner/tablet.png
+    - assets/demo/dot.png
+    - assets/demo/colab.png
+    - assets/demo/dashboard.png
+    - assets/demo/goal.png
+    - assets/demo/google.png
+    - assets/demo/pic1.png
+    - assets/demo/pic2.png
+    - assets/demo/pic3.png
+    - assets/demo/team.png
 
-  - assets/about/advise/comp.png
+    - assets/about/why/wisework.png
+    - assets/about/why/successful.png
+    - assets/about/why/check.png
 
-  - assets/about/awards/cdpo.png
-  - assets/about/awards/coso.png
-  - assets/about/awards/csa.png
-  - assets/about/awards/iso9001.png
-  - assets/about/awards/iso20000.png
-  - assets/about/awards/iso22301.png
-  - assets/about/awards/iso27001.png
-  - assets/about/awards/iso27005.png
-  - assets/about/awards/iso27017.png
-  - assets/about/awards/iso27018.png
-  - assets/about/awards/iso27701.png
-  - assets/about/awards/iso31000.png
+    - assets/about/banner/banner.png
+    - assets/about/banner/bg-banner.png
+    - assets/about/banner/mobile.png
+    - assets/about/banner/tablet.png
 
-  - assets/product/mobile_creative.png
-  - assets/product/creative.png
-  - assets/product/select.png
-  - assets/product/choices.png
-  - assets/product/check.png
-  - assets/product/enterprise.png
-  - assets/product/standard.png
-  - assets/product/express.png
-  - assets/product/blue_cloud.png
-  - assets/product/blue_clouds.png
-  - assets/product/blue_rainbow.png
+    - assets/about/advise/comp.png
 
-  - assets/about/gams/BG-gams.png
-  - assets/about/gams/Gams_Header.png
-  - assets/about/gams/Gams_Header01.png
-  - assets/about/gams/Gams_Header_BG.png
-  - assets/about/gams/Gams_Header_Mobile_BG.png
-  - assets/about/gams/Iphone_GAMS01.png
-  - assets/about/gams/Ipad_GAMS02.png
-  - assets/about/gams/PC_GAMS03.png
-  - assets/about/gams/Laptop_GAMS04.png
-  - assets/about/gams/Ipad_GAMS05.png
-  - assets/about/gams/Macbook_GAMS.png 
-  - assets/about/gams/icon_Check.png 
-  - assets/about/gams/Frame-220.png 
-  - assets/about/gams/AMS_01.png 
-  - assets/about/gams/AMS_02.png 
-  - assets/about/gams/AMS_03.png 
-  - assets/about/gams/AMS_04.png 
-  - assets/about/gams/AMS_05.png 
-  
-  - assets/images/
+    - assets/about/awards/cdpo.png
+    - assets/about/awards/coso.png
+    - assets/about/awards/csa.png
+    - assets/about/awards/iso9001.png
+    - assets/about/awards/iso20000.png
+    - assets/about/awards/iso22301.png
+    - assets/about/awards/iso27001.png
+    - assets/about/awards/iso27005.png
+    - assets/about/awards/iso27017.png
+    - assets/about/awards/iso27018.png
+    - assets/about/awards/iso27701.png
+    - assets/about/awards/iso31000.png
 
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
+    - assets/product/mobile_creative.png
+    - assets/product/creative.png
+    - assets/product/select.png
+    - assets/product/choices.png
+    - assets/product/check.png
+    - assets/product/enterprise.png
+    - assets/product/standard.png
+    - assets/product/express.png
+    - assets/product/blue_cloud.png
+    - assets/product/blue_clouds.png
+    - assets/product/blue_rainbow.png
+
+    - assets/about/gams/BG-gams.png
+    - assets/about/gams/Gams_Header.png
+    - assets/about/gams/Gams_Header01.png
+    - assets/about/gams/Gams_Header_BG.png
+    - assets/about/gams/Gams_Header_Mobile_BG.png
+    - assets/about/gams/Iphone_GAMS01.png
+    - assets/about/gams/Ipad_GAMS02.png
+    - assets/about/gams/PC_GAMS03.png
+    - assets/about/gams/Laptop_GAMS04.png
+    - assets/about/gams/Ipad_GAMS05.png
+    - assets/about/gams/Macbook_GAMS.png
+    - assets/about/gams/icon_Check.png
+    - assets/about/gams/Frame-220.png
+    - assets/about/gams/AMS_01.png
+    - assets/about/gams/AMS_02.png
+    - assets/about/gams/AMS_03.png
+    - assets/about/gams/AMS_04.png
+    - assets/about/gams/AMS_05.png
+
+    - assets/images/
+
   uses-material-design: true
-
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
-
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages

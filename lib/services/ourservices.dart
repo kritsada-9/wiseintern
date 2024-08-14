@@ -161,7 +161,7 @@ class _OurservicesPageState extends State<OurservicesPage> {
                 children: [
                   Container(
                     width: 1440,
-                    height: 670,
+                    height: 800,
                     color: Colors.white,
                     child: Column(
                       children: [

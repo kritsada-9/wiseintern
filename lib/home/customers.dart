@@ -1071,150 +1071,150 @@ class _CustomerState extends State<Customer> {
                                     ),
                                   ],
                                 ),
-                      Responsive.isDesktop(context)
-                          ? Stack(
-                              children: [
-                                // Row(
-                                //   children: [CustomerCarousel()],
-                                // ),                            
-                              ],
-                            )
-                          : Stack(
-                              children: [
-                                Container(
-                                  width: 1440,
-                                  child: Container(
-                                    width: Responsive.isTablet(context)
-                                        ? 767
-                                        : 375,
-                                    height: Responsive.isTablet(context)
-                                        ? 750
-                                        : 660,
-                                    color: Color.fromARGB(255, 5, 45, 97),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: Responsive.isTablet(context)
-                                              ? 767
-                                              : 375,
-                                          height: Responsive.isTablet(context)
-                                              ? 250
-                                              : 120,
-                                          // color: Color.fromARGB(255, 190, 208, 232),
-                                          child: Stack(
-                                            children: [
-                                              new Positioned(
-                                                  top: Responsive.isTablet(
-                                                          context)
-                                                      ? 126
-                                                      : 50,
-                                                  left: Responsive.isTablet(
-                                                          context)
-                                                      ? 218
-                                                      : 77,
-                                                  child: Text(
-                                                    "Real Stories from\nReal Customers",
-                                                    style: GoogleFonts
-                                                        .ibmPlexSansThai(
-                                                            fontSize: Responsive
-                                                                    .isTablet(
-                                                                        context)
-                                                                ? 36
-                                                                : 24,
-                                                            fontWeight:
-                                                                FontWeight.w600,
-                                                            color:
-                                                                Colors.white),
-                                                  ))
-                                            ],
-                                          ),
-                                        ),
-                                        Container(
-                                          width: Responsive.isTablet(context)
-                                              ? 450
-                                              : 305,
-                                          height: 70,
-                                          child: Text(
-                                            Responsive.isTablet(context)
-                                                ? "Why wisework? แบ่งปันประสบการณ์จริงจากลูกค้าคนสำคัญ"
-                                                : "Why wisework? \nแบ่งปันประสบการณ์จริงจากลูกค้าคนสำคัญ",
-                                            style: GoogleFonts.ibmPlexSansThai(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w400,
-                                              color: Colors.white,
-                                            ),
-                                            textAlign:
-                                                Responsive.isTablet(context)
-                                                    ? TextAlign.center
-                                                    : TextAlign.start,
-                                          ),
-                                        ),
-                                        Container(
-                                          width: 1440,
-                                          child: CarouselSlider(
-                                            options: CarouselOptions(
-                                              viewportFraction:
-                                                  Responsive.isTablet(context)
-                                                      ? (350 / 600)
-                                                      : 0.76,
-                                              height:
-                                                  Responsive.isTablet(context)
-                                                      ? 380
-                                                      : 410,
-                                              autoPlay: true,
-                                              enlargeCenterPage: true,
-                                              onPageChanged: (index, reason) {
-                                                setState(() {
-                                                  _current = index;
-                                                  // print('Current Page: $_current');
-                                                });
-                                              },
-                                            ),
-                                            items: cards,
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          height: 25,
-                                        ),
-                                        Container(
-                                          child: AnimatedSmoothIndicator(
-                                              activeIndex: _current,
-                                              count: 4,
-                                              effect: ScaleEffect(
-                                                  activePaintStyle:
-                                                      PaintingStyle.stroke,
-                                                  scale: 1.4,
-                                                  activeStrokeWidth: 1.0,
-                                                  dotWidth: 16,
-                                                  dotHeight: 16,
-                                                  dotColor: Color.fromARGB(
-                                                      255, 255, 255, 255))),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                new Positioned(
-                                  top: Responsive.isTablet(context) ? 25 : 15,
-                                  right:
-                                      Responsive.isTablet(context) ? 661 : 309,
-                                  child: SizedBox(
-                                      width: Responsive.isTablet(context)
-                                          ? 120
-                                          : 86,
-                                      height: Responsive.isTablet(context)
-                                          ? 101
-                                          : 72,
-                                      child: Opacity(
-                                        opacity: 0.5,
-                                        child: Image.asset(
-                                            "assets/customer/comma.png"),
-                                      )),
-                                ),
-                              ],
-                            ),
+                      // Responsive.isDesktop(context)
+                      //     ? Stack(
+                      //         children: [
+                      //           // Row(
+                      //           //   children: [CustomerCarousel()],
+                      //           // ),                            
+                      //         ],
+                      //       )
+                      //     : Stack(
+                      //         children: [
+                      //           Container(
+                      //             width: 1440,
+                      //             child: Container(
+                      //               width: Responsive.isTablet(context)
+                      //                   ? 767
+                      //                   : 375,
+                      //               height: Responsive.isTablet(context)
+                      //                   ? 750
+                      //                   : 660,
+                      //               color: Color.fromARGB(255, 5, 45, 97),
+                      //               child: Column(
+                      //                 crossAxisAlignment:
+                      //                     CrossAxisAlignment.center,
+                      //                 children: [
+                      //                   Container(
+                      //                     width: Responsive.isTablet(context)
+                      //                         ? 767
+                      //                         : 375,
+                      //                     height: Responsive.isTablet(context)
+                      //                         ? 250
+                      //                         : 120,
+                      //                     // color: Color.fromARGB(255, 190, 208, 232),
+                      //                     child: Stack(
+                      //                       children: [
+                      //                         new Positioned(
+                      //                             top: Responsive.isTablet(
+                      //                                     context)
+                      //                                 ? 126
+                      //                                 : 50,
+                      //                             left: Responsive.isTablet(
+                      //                                     context)
+                      //                                 ? 218
+                      //                                 : 77,
+                      //                             child: Text(
+                      //                               "Real Stories from\nReal Customers",
+                      //                               style: GoogleFonts
+                      //                                   .ibmPlexSansThai(
+                      //                                       fontSize: Responsive
+                      //                                               .isTablet(
+                      //                                                   context)
+                      //                                           ? 36
+                      //                                           : 24,
+                      //                                       fontWeight:
+                      //                                           FontWeight.w600,
+                      //                                       color:
+                      //                                           Colors.white),
+                      //                             ))
+                      //                       ],
+                      //                     ),
+                      //                   ),
+                      //                   Container(
+                      //                     width: Responsive.isTablet(context)
+                      //                         ? 450
+                      //                         : 305,
+                      //                     height: 70,
+                      //                     child: Text(
+                      //                       Responsive.isTablet(context)
+                      //                           ? "Why wisework? แบ่งปันประสบการณ์จริงจากลูกค้าคนสำคัญ"
+                      //                           : "Why wisework? \nแบ่งปันประสบการณ์จริงจากลูกค้าคนสำคัญ",
+                      //                       style: GoogleFonts.ibmPlexSansThai(
+                      //                         fontSize: 16,
+                      //                         fontWeight: FontWeight.w400,
+                      //                         color: Colors.white,
+                      //                       ),
+                      //                       textAlign:
+                      //                           Responsive.isTablet(context)
+                      //                               ? TextAlign.center
+                      //                               : TextAlign.start,
+                      //                     ),
+                      //                   ),
+                      //                   Container(
+                      //                     width: 1440,
+                      //                     child: CarouselSlider(
+                      //                       options: CarouselOptions(
+                      //                         viewportFraction:
+                      //                             Responsive.isTablet(context)
+                      //                                 ? (350 / 600)
+                      //                                 : 0.76,
+                      //                         height:
+                      //                             Responsive.isTablet(context)
+                      //                                 ? 380
+                      //                                 : 410,
+                      //                         autoPlay: true,
+                      //                         enlargeCenterPage: true,
+                      //                         onPageChanged: (index, reason) {
+                      //                           setState(() {
+                      //                             _current = index;
+                      //                             // print('Current Page: $_current');
+                      //                           });
+                      //                         },
+                      //                       ),
+                      //                       items: cards,
+                      //                     ),
+                      //                   ),
+                      //                   SizedBox(
+                      //                     height: 25,
+                      //                   ),
+                      //                   Container(
+                      //                     child: AnimatedSmoothIndicator(
+                      //                         activeIndex: _current,
+                      //                         count: 4,
+                      //                         effect: ScaleEffect(
+                      //                             activePaintStyle:
+                      //                                 PaintingStyle.stroke,
+                      //                             scale: 1.4,
+                      //                             activeStrokeWidth: 1.0,
+                      //                             dotWidth: 16,
+                      //                             dotHeight: 16,
+                      //                             dotColor: Color.fromARGB(
+                      //                                 255, 255, 255, 255))),
+                      //                   ),
+                      //                 ],
+                      //               ),
+                      //             ),
+                      //           ),
+                      //           new Positioned(
+                      //             top: Responsive.isTablet(context) ? 25 : 15,
+                      //             right:
+                      //                 Responsive.isTablet(context) ? 661 : 309,
+                      //             child: SizedBox(
+                      //                 width: Responsive.isTablet(context)
+                      //                     ? 120
+                      //                     : 86,
+                      //                 height: Responsive.isTablet(context)
+                      //                     ? 101
+                      //                     : 72,
+                      //                 child: Opacity(
+                      //                   opacity: 0.5,
+                      //                   child: Image.asset(
+                      //                       "assets/customer/comma.png"),
+                      //                 )),
+                      //           ),
+                      //         ],
+                      //       ),
                       Responsive.isDesktop(context)
                           ? Container(
                               height: 206,

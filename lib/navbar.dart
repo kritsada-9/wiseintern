@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ionicons/ionicons.dart';
 
 class NavBar extends StatefulWidget {
   // final double opacity;
@@ -75,8 +76,8 @@ class _NavigationBarState extends State<NavBar> {
               width: screenSize.width / 4,
             ),
             SizedBox(
-              height: 18,
-              width: 62,
+              height: 20,
+              width: 80,
               child: TextButton(
                 child: Text(
                   "Home",
@@ -135,7 +136,7 @@ class _NavigationBarState extends State<NavBar> {
                               ? Colors.white
                               : Color.fromARGB(255, 52, 144, 206),
                         ),
-                      )),                     
+                      )),
                 ],
                 value: AboutValue,
                 onChanged: (value) {
@@ -152,9 +153,7 @@ class _NavigationBarState extends State<NavBar> {
                       color: Color.fromARGB(255, 52, 144, 206),
                     )),
                 iconStyleData: const IconStyleData(
-                  icon: Icon(
-                    Icons.expand_more_outlined,
-                  ),
+                  icon: Icon(Ionicons.caret_down),
                   iconSize: 20,
                   iconEnabledColor: Colors.white,
                   iconDisabledColor: Colors.white,
@@ -204,7 +203,7 @@ class _NavigationBarState extends State<NavBar> {
                               : Color.fromARGB(255, 52, 144, 206),
                         ),
                       )),
-                       DropdownMenuItem(
+                  DropdownMenuItem(
                       value: 'pdpa compliance',
                       onTap: () => context.go('/package'),
                       child: Text(
@@ -256,9 +255,7 @@ class _NavigationBarState extends State<NavBar> {
                       color: Color.fromARGB(255, 52, 144, 206),
                     )),
                 iconStyleData: const IconStyleData(
-                  icon: Icon(
-                    Icons.expand_more_outlined,
-                  ),
+                  icon: Icon(Ionicons.caret_down),
                   iconSize: 20,
                   iconEnabledColor: Colors.white,
                   iconDisabledColor: Colors.white,

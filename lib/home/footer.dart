@@ -75,7 +75,7 @@ class _FooterState extends State<Footer> {
     var list2 = Container(
         color: Color.fromARGB(0, 255, 193, 7),
         height: Responsive.isDesktop(context)
-            ? 124
+            ? 150
             : Responsive.isTablet(context)
                 ? 213
                 : 301,
@@ -454,8 +454,8 @@ class _FooterState extends State<Footer> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              width: 380,
-                              // height: 250,
+                              width: 400,
+                              height: 260,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [

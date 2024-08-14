@@ -147,8 +147,9 @@ class _Register extends State<Register> {
                                       Padding(
                                           padding:
                                               const EdgeInsets.only(left: 70),
-                                          child: TextButton(                                           
-                                            onPressed: () => context.go('/demodetail'),
+                                          child: TextButton(
+                                            onPressed: () =>
+                                                context.go('/demodetail'),
                                             child: Text(
                                               "ถัดไป",
                                               style:
@@ -490,7 +491,6 @@ class _Register extends State<Register> {
                                                 ],
                                               ),
                                             ),
-                                            
                                           ],
                                         ),
                                       ),
@@ -677,7 +677,6 @@ class _Register extends State<Register> {
                                           ],
                                         ),
                                       ),
-                                     
                                       Padding(
                                         padding: const EdgeInsets.only(
                                             left: 25, top: 36),
@@ -685,7 +684,6 @@ class _Register extends State<Register> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                           
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   top: 36),
@@ -694,7 +692,8 @@ class _Register extends State<Register> {
                                                   width: 344,
                                                   height: 66,
                                                   child: ElevatedButton(
-                                                    onPressed: () => context.go('/demodetail'),
+                                                    onPressed: () => context
+                                                        .go('/demodetail'),
                                                     style: ElevatedButton
                                                         .styleFrom(
                                                       backgroundColor:
@@ -1008,7 +1007,6 @@ class _Register extends State<Register> {
                                   ],
                                 ),
                               ),
-
                             ],
                           ),
                         ),
@@ -1018,14 +1016,14 @@ class _Register extends State<Register> {
                 ),
               )
             : Center(
-                child: Column(    
+                child: Column(
                   children: [
                     Container(
                       width: 1440,
                       height: Responsive.isTablet(context) ? 1336 : 1100,
                       color: Color.fromARGB(255, 232, 242, 252),
-                      child: Center(        
-                        child: Column(    
+                      child: Center(
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Responsive.isTablet(context)
@@ -1238,7 +1236,7 @@ class _Register extends State<Register> {
                                                             ),
                                                           ],
                                                         ),
-                                                      ),                                                   
+                                                      ),
                                                     ],
                                                   )
                                                 : Column(
@@ -1326,7 +1324,7 @@ class _Register extends State<Register> {
                                                             ),
                                                           ],
                                                         ),
-                                                      ),                                                    
+                                                      ),
                                                     ],
                                                   )),
                                         Padding(
@@ -1688,7 +1686,7 @@ class _Register extends State<Register> {
                                                         ),
                                                       ),
                                                     ],
-                                                  )),                                        
+                                                  )),
                                         Padding(
                                           padding:
                                               const EdgeInsets.only(top: 36),
@@ -1696,7 +1694,6 @@ class _Register extends State<Register> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                             
                                               Padding(
                                                 padding: const EdgeInsets.only(
                                                   top: 36,
@@ -1712,7 +1709,8 @@ class _Register extends State<Register> {
                                                         ? 66
                                                         : 46,
                                                     child: ElevatedButton(
-                                                      onPressed: () => context.go('/demodetail'),
+                                                      onPressed: () => context
+                                                          .go('/demodetail'),
                                                       style: ElevatedButton
                                                           .styleFrom(
                                                         backgroundColor:
@@ -1985,7 +1983,8 @@ class _Register extends State<Register> {
                                                     textAlign: TextAlign.start,
                                                   ),
                                                   TextButton(
-                                                    onPressed: () => context.go('/demodetail'),
+                                                    onPressed: () => context
+                                                        .go('/demodetail'),
                                                     child: Text(
                                                       "ถัดไป",
                                                       style: GoogleFonts
@@ -2049,7 +2048,8 @@ class _Register extends State<Register> {
                                                           TextAlign.start,
                                                     ),
                                                     TextButton(
-                                                      onPressed: () => context.go('/demodetail'),
+                                                      onPressed: () => context
+                                                          .go('/demodetail'),
                                                       child: Text(
                                                         "ถัดไป",
                                                         style: GoogleFonts
