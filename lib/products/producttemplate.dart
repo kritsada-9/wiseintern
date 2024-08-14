@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:wiseintern/navbar.dart';
 import 'package:wiseintern/responsive.dart';
 import 'package:wiseintern/menu_drawer.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:wiseintern/features/pdmanagement.dart';
-import 'package:wiseintern/home/packages.dart';
 import 'package:wiseintern/home/footer.dart';
-import 'package:wiseintern/model/packages.dart';
 import 'package:wiseintern/products/productdetails.dart';
 
 import 'package:wiseintern/home/features.dart';

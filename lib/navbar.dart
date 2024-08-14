@@ -171,8 +171,8 @@ class _NavigationBarState extends State<NavBar> {
                     offset: const Offset(-10, -10),
                     scrollbarTheme: ScrollbarThemeData(
                       radius: const Radius.circular(40),
-                      thickness: MaterialStateProperty.all(6),
-                      thumbVisibility: MaterialStateProperty.all(true),
+                      thickness: WidgetStateProperty.all(6),
+                      thumbVisibility: WidgetStateProperty.all(true),
                     )),
                 menuItemStyleData: const MenuItemStyleData(
                   height: 40,
@@ -275,8 +275,8 @@ class _NavigationBarState extends State<NavBar> {
                     offset: const Offset(-20, -10),
                     scrollbarTheme: ScrollbarThemeData(
                       radius: const Radius.circular(40),
-                      thickness: MaterialStateProperty.all(6),
-                      thumbVisibility: MaterialStateProperty.all(true),
+                      thickness: WidgetStateProperty.all(6),
+                      thumbVisibility: WidgetStateProperty.all(true),
                     )),
                 menuItemStyleData: const MenuItemStyleData(
                   height: 40,

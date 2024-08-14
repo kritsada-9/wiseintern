@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:wiseintern/navbar.dart';
 import 'package:wiseintern/responsive.dart';
 import 'package:wiseintern/menu_drawer.dart';
@@ -10,7 +9,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:wiseintern/home/features.dart';
 import 'package:wiseintern/home/footer.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:wiseintern/model/features.dart';
 
 class MyDetails extends StatefulWidget {
   final String title;

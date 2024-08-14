@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import '../responsive.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:go_router/go_router.dart';
 
 class HeaderHome extends StatelessWidget implements PreferredSizeWidget {
   HeaderHome({Key? key}) : super(key: key);

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wiseintern/responsive.dart';
-import 'package:dropdown_button2/dropdown_button2.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter/services.dart';
 // import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class cookiespolicy extends StatefulWidget {

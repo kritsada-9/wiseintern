@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:wiseintern/gams/gams.dart';
 import 'package:wiseintern/gams/gamspage.dart';
 import 'package:wiseintern/policy/cookiespolicypage.dart';
 import 'package:wiseintern/policy/privacypolicypage.dart';
@@ -9,9 +8,7 @@ import 'package:wiseintern/responsive.dart';
 import 'package:wiseintern/home/homepage.dart';
 import 'package:wiseintern/about/aboutpage.dart';
 import 'package:wiseintern/customers/customerspage.dart';
-import 'package:wiseintern/model/features.dart';
 import 'package:wiseintern/services/servicespage.dart';
-import 'package:wiseintern/features/pdmanagement.dart';
 import 'package:wiseintern/contact/contactpage.dart';
 import 'package:wiseintern/faq/faqpage.dart';
 import 'package:wiseintern/demo/demopage.dart';
@@ -19,10 +16,7 @@ import 'package:wiseintern/table/producttablepage.dart';
 
 import 'package:wiseintern/features/templateFeatures.dart';
 import 'package:wiseintern/products/producttemplate.dart';
-import 'package:wiseintern/features/pdmanagement.dart';
 
-import 'package:get/get.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:wiseintern/termsofservice/termsofservicepage.dart';
 
 import 'demo/demodetail.dart';

@@ -3,7 +3,6 @@
 // import 'package:flutter/foundation.dart';
 // import 'package:wiseintern/home/carousel.dart';
 
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 import '../responsive.dart';
 import 'package:flutter/material.dart';

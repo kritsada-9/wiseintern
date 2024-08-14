@@ -4,15 +4,9 @@ import 'package:go_router/go_router.dart';
 // import 'package:google_fonts/google_fonts.dart';
 import 'package:wiseintern/navbar.dart';
 
-import 'package:wiseintern/home/pdpa.dart';
-import 'package:wiseintern/home/features.dart';
-import 'package:wiseintern/home/packages.dart';
 import 'package:wiseintern/responsive.dart';
-import 'package:wiseintern/home/customers.dart';
-import 'package:wiseintern/home/story.dart';
 import 'package:wiseintern/menu_drawer.dart';
 import 'package:wiseintern/home/footer.dart';
-import 'package:wiseintern/home/faq.dart';
 import 'package:wiseintern/gams/gams.dart';
 import 'package:wiseintern/gams/features.dart';
 import 'package:wiseintern/gams/gamsfeatures.dart';
