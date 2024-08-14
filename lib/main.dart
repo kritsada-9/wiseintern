@@ -1,22 +1,22 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:meta_seo/meta_seo.dart';
+
+import 'package:wiseintern/about/aboutpage.dart';
+import 'package:wiseintern/contact/contactpage.dart';
+import 'package:wiseintern/customers/customerspage.dart';
+import 'package:wiseintern/demo/demopage.dart';
+import 'package:wiseintern/faq/faqpage.dart';
+import 'package:wiseintern/features/templateFeatures.dart';
 import 'package:wiseintern/gams/gamspage.dart';
+import 'package:wiseintern/home/homepage.dart';
 import 'package:wiseintern/policy/cookiespolicypage.dart';
 import 'package:wiseintern/policy/privacypolicypage.dart';
-import 'package:wiseintern/responsive.dart';
-
-import 'package:wiseintern/home/homepage.dart';
-import 'package:wiseintern/about/aboutpage.dart';
-import 'package:wiseintern/customers/customerspage.dart';
-import 'package:wiseintern/services/servicespage.dart';
-import 'package:wiseintern/contact/contactpage.dart';
-import 'package:wiseintern/faq/faqpage.dart';
-import 'package:wiseintern/demo/demopage.dart';
-import 'package:wiseintern/table/producttablepage.dart';
-
-import 'package:wiseintern/features/templateFeatures.dart';
 import 'package:wiseintern/products/producttemplate.dart';
-
+import 'package:wiseintern/responsive.dart';
+import 'package:wiseintern/services/servicespage.dart';
+import 'package:wiseintern/table/producttablepage.dart';
 import 'package:wiseintern/termsofservice/termsofservicepage.dart';
 
 import 'demo/demodetail.dart';
@@ -27,6 +27,9 @@ import 'demo/demodetail.dart';
 // import 'package:wiseintern/home/customers.dart';
 
 void main() {
+  if (kIsWeb) {
+    MetaSEO().config();
+  }
   runApp(const MyApp());
 }
 
@@ -303,160 +306,18 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  // GoRouter _path = GoRouter(routes: [
-  //   GoRoute(
-  //       path: '/',
-  //       builder: (BuildContext context, GoRouterState state) {
-  //         return HomePage();
-  //       })
-  // ]);
-
-  // Future<String> loadjsonData() async {
-  //   return await rootBundle.loadString("assets/featuresData.json");
-  // }
-
-  // Future<void> parsejsonData() async {
-  //   String json = await loadjsonData();
-  //   List<dynamic> data = jsonDecode(json);
-  //   // print(1);
-
-  //   List<FeatureModel> features = [];
-  //   for (dynamic item in data) {
-  //     Map<String, dynamic> map = item;
-  //     features.add(FeatureModel.fromJson(map));
-  //   }
-  //   print(features);
-  //   setState(() {
-  //     _path = GoRouter(routes: <RouteBase>[
-  //       ...features.map(
-  //         (Model) => GoRoute(
-  //           path: Model.page,
-  //           builder: (BuildContext context, GoRouterState state) {
-  //             return buildRoutePage(Model);
-  //           },
-  //         ),
-  //       )
-  //     ]);
-  //   });
-  // }
-
-  // Widget buildRoutePage(FeatureModel model) {
-  //   switch (model.page) {
-  //     case "home":
-  //       return HomePage();
-  //     case "story":
-  //       return AboutPage();
-  //     case "customers":
-  //       return CustomerPage();
-  //     case "services":
-  //       return ServicesPage();
-  //     case "product":
-  //       return ProductPage();
-  //     case "contact":
-  //       return ContactPage();
-  //     case "faq":
-  //       return FaqPage();
-  //     case "demo":
-  //       return DemoPage();
-  //     case "features/1":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/2":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/3":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/4":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/5":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/6":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/7":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/8":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/9":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/10":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/11":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-  //     case "features/12":
-  //       return MyDetails(
-  //         model.title,
-  //         model.description,
-  //         model.imageUrl,
-  //         model.features,
-  //       );
-
-  //     default:
-  //       return HomePage();
-  //   }
-  // }
-
-  // @override
-  // void initState() async {
-  //   super.initState();
-  //   parsejsonData();
-  // }
-
   @override
   Widget build(BuildContext context) {
+    if (kIsWeb) {
+      List<String> keywords = ['The Wise Work', 'Wise work'];
+      MetaSEO meta = MetaSEO();
+      meta.description(
+          description:
+              'Personal Data Management Services (PDPA) and Comprehensive Software Solutions for Organizations Receive guidance on PDPA laws and regulations from regulatory agencies through a team of experienced experts.');
+      meta.keywords(keywords: keywords.join(', '));
+    }
     return MaterialApp.router(
+      title: "The Wise Work",
       debugShowCheckedModeBanner: false,
       routerConfig: _router,
     );
